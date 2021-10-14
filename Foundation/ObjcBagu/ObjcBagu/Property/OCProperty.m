@@ -8,9 +8,9 @@
 
 #import "OCProperty.h"
 
-@interface Foo : NSObject
+@interface PFoo : NSObject
 @end
-@implementation Foo
+@implementation PFoo
 @end
 
 /*
@@ -21,8 +21,8 @@
  */
 @interface OCProperty ()
 
-@property (nonatomic, assign) Foo *assignFoo;
-@property (nonatomic, weak) Foo *weakFoo;
+@property (nonatomic, assign) PFoo *assignFoo;
+@property (nonatomic, weak) PFoo *weakFoo;
 
 @end
 
@@ -36,7 +36,7 @@
 
 - (void)testAssign {
     // warn: Assigning retained object to unsafe property; object will be released after assignment
-    self.assignFoo = [Foo new];
+    self.assignFoo = [PFoo new];
     // 访问已释放的内存区域，会导致运行时出错
     // err: EXC_BAD_ACCESS (code=1, address=0x18)
 //    NSLog(@"%@", self.assignFoo);
@@ -44,7 +44,7 @@
 
 - (void)testWeak {
     // warn: Assigning retained object to weak variable; object will be released after assignment
-    id __weak weakFoo = [Foo new];
+    id __weak weakFoo = [PFoo new];
     // ARC 会自动添加 release，导致创建之后就被释放，weak 对象自动置空
     NSLog(@"%@", weakFoo);
     // weak 释放原理
