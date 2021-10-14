@@ -47,7 +47,10 @@
     id __weak weakFoo = [Foo new];
     // ARC 会自动添加 release，导致创建之后就被释放，weak 对象自动置空
     NSLog(@"%@", weakFoo);
-    // hint: weak 释放原理
+    // weak 释放原理
+    // 1. 全局维护了一张 hash map，key 是引用对象的地址，value 是 weak 指针的数组
+    // 2. 引用的对象释放后，将 value 数组中的指针清空
+    // 3. 涉及的数据结构有 SideTable / weak_table_t / weak_entry_t
 }
 
 
