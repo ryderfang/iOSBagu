@@ -16,9 +16,9 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-//        [OCProperty run];
+        [OCProperty run];
 //        [OCTimer run];
-        [OCMsgForwarding run];
+//        [OCMsgForwarding run];
     }
     return 0;
 }

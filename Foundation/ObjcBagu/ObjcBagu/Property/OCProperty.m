@@ -23,6 +23,8 @@
 
 @property (nonatomic, assign) PFoo *assignFoo;
 @property (nonatomic, weak) PFoo *weakFoo;
+@property (nonatomic, copy) NSString *strCopy;
+@property (nonatomic, strong) NSString *strStrong;
 
 @end
 
@@ -32,6 +34,7 @@
     OCProperty *p = [OCProperty new];
     [p testAssign];
     [p testWeak];
+    [p testCopy];
 }
 
 - (void)testAssign {
@@ -53,5 +56,33 @@
     // 3. 涉及的数据结构有 SideTable / weak_table_t / weak_entry_t
 }
 
+- (void)testCopy {
+    // I. NSMutableString -> NSString
+    NSMutableString *sourceStr = [[NSMutableString alloc] initWithFormat:@"Hello, %@", @"World"];
+    // NSString 作为属性时，使用 copy，在这一步时会自动调用 [sourceStr copy] 方法，深拷贝一次，避免源改变后，属性随之改变
+    self.strCopy = sourceStr;
+    self.strStrong = sourceStr;
+    // source: 0x105b079d0, copy: 0x105c150e0, strong: 0x105b079d0
+    NSLog(@"source: %p, copy: %p, strong: %p", sourceStr, self.strCopy, self.strStrong);
+    // 修改源
+    sourceStr = [NSMutableString stringWithString:@"Hoooo"];
+    // source: Hoooo, copy: Hello, World, strong: Hello, World
+    NSLog(@"source: %@, copy: %@, strong: %@", sourceStr, self.strCopy, self.strStrong);
+    
+#pragma mark 这种情况 copy 和 strong 是一样的
+    // II. NSString -> NSString
+    NSString *srcStr = @"Hello, World";
+    self.strCopy = srcStr;
+    self.strStrong = srcStr;
+    // source: 0x105a04260, copy: 0x100004170, strong: 0x100004170 地址一样!
+    NSLog(@"source: %p, copy: %p, strong: %p", sourceStr, self.strCopy, self.strStrong);
+    // 修改源
+    srcStr = @"Woooo";
+    // source: 0x105a04260, copy: 0x100004170, strong: 0x100004170
+    // 也可以避免被修改，因为 NSString 重新赋值，相当于构建了一个新对象 (source 地址变化)
+    NSLog(@"source: %p, copy: %p, strong: %p", sourceStr, self.strCopy, self.strStrong);
+    // source: Hoooo, copy: Hello, World, strong: Hello, World
+    NSLog(@"source: %@, copy: %@, strong: %@", sourceStr, self.strCopy, self.strStrong);
+}
 
 @end
