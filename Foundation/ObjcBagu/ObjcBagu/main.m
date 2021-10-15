@@ -10,6 +10,7 @@
 #import "OCProperty.h"
 #import "OCTimer.h"
 #import "OCMsgForwarding.h"
+#import "OCAutoReleasePool.h"
 
 // iOS runtime: https://github.com/RetVal/objc-runtime
 
@@ -19,6 +20,7 @@ int main(int argc, const char * argv[]) {
         [OCProperty run];
 //        [OCTimer run];
 //        [OCMsgForwarding run];
+//        [OCAutoReleasePool run];
     }
     return 0;
 }

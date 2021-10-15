@@ -13,18 +13,25 @@
 @implementation PFoo
 @end
 
+
+// !! @property 的本质就是 ivar(实例变量) + get/set 方法
+// @synthesize 是默认的，就是由系统创建 get/set
 /*
  - 线程相关: atomic, nonatomic
  - 权限相关: readonly, readwrite
  - ARC: assign, strong, weak, copy
  - MRC: assign, retain, copy
  */
-@interface OCProperty ()
+@interface OCProperty () {
+    // @dynamic 时不会创建实例变量，需要手动创建
+    BOOL _dyBool;
+}
 
 @property (nonatomic, assign) PFoo *assignFoo;
 @property (nonatomic, weak) PFoo *weakFoo;
 @property (nonatomic, copy) NSString *strCopy;
 @property (nonatomic, strong) NSString *strStrong;
+@property (nonatomic, assign) BOOL dyBool;
 
 @end
 
@@ -35,6 +42,7 @@
     [p testAssign];
     [p testWeak];
     [p testCopy];
+    [p testDynamic];
 }
 
 - (void)testAssign {
@@ -83,6 +91,24 @@
     NSLog(@"source: %p, copy: %p, strong: %p", sourceStr, self.strCopy, self.strStrong);
     // source: Hoooo, copy: Hello, World, strong: Hello, World
     NSLog(@"source: %@, copy: %@, strong: %@", sourceStr, self.strCopy, self.strStrong);
+}
+
+@dynamic dyBool;
+
+- (void)testDynamic {
+    // 如果不自己实现 set 方法，会抛 NSInvalidArgumentException 异常
+    self.dyBool = YES;
+    // 如果不自己实现 get 方法，会抛 NSInvalidArgumentException 异常
+    NSLog(@"get:: %d", self.dyBool);
+}
+
+- (void)setDyBool:(BOOL)dyBool {
+    NSLog(@"%d", dyBool);
+    _dyBool = dyBool;
+}
+
+- (BOOL)dyBool {
+    return _dyBool;
 }
 
 @end

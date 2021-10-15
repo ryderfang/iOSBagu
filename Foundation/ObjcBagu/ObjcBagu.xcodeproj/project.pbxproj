@@ -15,6 +15,8 @@
 		0D84B7DF2718345C007CB183 /* OCWeakObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7DE2718345C007CB183 /* OCWeakObj.m */; };
 		0D84B7E2271847F0007CB183 /* OCWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7E1271847F0007CB183 /* OCWeakProxy.m */; };
 		0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7E42718513F007CB183 /* OCMsgForwarding.m */; };
+		0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B8562719298D007CB183 /* OCAutoReleasePool.mm */; };
+		0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B8592719328E007CB183 /* OCRunloop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +48,10 @@
 		0D84B7E1271847F0007CB183 /* OCWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCWeakProxy.m; sourceTree = "<group>"; };
 		0D84B7E32718513F007CB183 /* OCMsgForwarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMsgForwarding.h; sourceTree = "<group>"; };
 		0D84B7E42718513F007CB183 /* OCMsgForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMsgForwarding.m; sourceTree = "<group>"; };
+		0D84B8552719298D007CB183 /* OCAutoReleasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAutoReleasePool.h; sourceTree = "<group>"; };
+		0D84B8562719298D007CB183 /* OCAutoReleasePool.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCAutoReleasePool.mm; sourceTree = "<group>"; };
+		0D84B8582719328E007CB183 /* OCRunloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRunloop.h; sourceTree = "<group>"; };
+		0D84B8592719328E007CB183 /* OCRunloop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRunloop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,8 @@
 		0D84B7322716D7B4007CB183 /* Runloop */ = {
 			isa = PBXGroup;
 			children = (
+				0D84B8582719328E007CB183 /* OCRunloop.h */,
+				0D84B8592719328E007CB183 /* OCRunloop.m */,
 			);
 			path = Runloop;
 			sourceTree = "<group>";
@@ -146,6 +154,8 @@
 		0D84B7332716D7D0007CB183 /* AutoReleasePool */ = {
 			isa = PBXGroup;
 			children = (
+				0D84B8552719298D007CB183 /* OCAutoReleasePool.h */,
+				0D84B8562719298D007CB183 /* OCAutoReleasePool.mm */,
 			);
 			path = AutoReleasePool;
 			sourceTree = "<group>";
@@ -274,12 +284,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */,
 				0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */,
 				0D84B7422716DC4C007CB183 /* OCARC.m in Sources */,
 				0D84B73F2716DB9B007CB183 /* OCProperty.m in Sources */,
 				0D84B7282716D68D007CB183 /* main.m in Sources */,
 				0D84B7DC27181729007CB183 /* NSTimer+RRKit.m in Sources */,
 				0D84B7E2271847F0007CB183 /* OCWeakProxy.m in Sources */,
+				0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */,
 				0D84B76A271811AE007CB183 /* OCTimer.m in Sources */,
 				0D84B7DF2718345C007CB183 /* OCWeakObj.m in Sources */,
 			);
