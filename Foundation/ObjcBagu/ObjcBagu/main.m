@@ -13,6 +13,7 @@
 #import "OCAutoReleasePool.h"
 #import "OCMRC.h"
 #import "OCMethodSwizzling.h"
+#import "OCCategory.h"
 
 // iOS runtime: https://github.com/RetVal/objc-runtime
 
@@ -24,7 +25,8 @@ int main(int argc, const char * argv[]) {
 //        [OCMsgForwarding run];
 //        [OCAutoReleasePool run];
 //        [OCMRC run];
-        [OCMethodSwizzling run];
+//        [OCMethodSwizzling run];
+        [OCCategory run];
     }
     return 0;
 }

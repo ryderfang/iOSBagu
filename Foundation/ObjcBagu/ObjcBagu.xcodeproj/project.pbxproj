@@ -19,6 +19,9 @@
 		0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7E42718513F007CB183 /* OCMsgForwarding.m */; };
 		0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B8562719298D007CB183 /* OCAutoReleasePool.mm */; };
 		0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B8592719328E007CB183 /* OCRunloop.m */; };
+		0DBB448A271EE94800F9C479 /* OCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB4489271EE94800F9C479 /* OCCategory.m */; };
+		0DBB448D271EEA5C00F9C479 /* OCCategory+T1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448C271EEA5C00F9C479 /* OCCategory+T1.m */; };
+		0DBB4490271EEA6800F9C479 /* OCCategory+T2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448F271EEA6800F9C479 /* OCCategory+T2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +61,12 @@
 		0D84B8562719298D007CB183 /* OCAutoReleasePool.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCAutoReleasePool.mm; sourceTree = "<group>"; };
 		0D84B8582719328E007CB183 /* OCRunloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRunloop.h; sourceTree = "<group>"; };
 		0D84B8592719328E007CB183 /* OCRunloop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRunloop.m; sourceTree = "<group>"; };
+		0DBB4488271EE94800F9C479 /* OCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCategory.h; sourceTree = "<group>"; };
+		0DBB4489271EE94800F9C479 /* OCCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCategory.m; sourceTree = "<group>"; };
+		0DBB448B271EEA5C00F9C479 /* OCCategory+T1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCategory+T1.h"; sourceTree = "<group>"; };
+		0DBB448C271EEA5C00F9C479 /* OCCategory+T1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCCategory+T1.m"; sourceTree = "<group>"; };
+		0DBB448E271EEA6800F9C479 /* OCCategory+T2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCategory+T2.h"; sourceTree = "<group>"; };
+		0DBB448F271EEA6800F9C479 /* OCCategory+T2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCCategory+T2.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +139,12 @@
 		0D84B72F2716D79A007CB183 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				0DBB4488271EE94800F9C479 /* OCCategory.h */,
+				0DBB4489271EE94800F9C479 /* OCCategory.m */,
+				0DBB448B271EEA5C00F9C479 /* OCCategory+T1.h */,
+				0DBB448C271EEA5C00F9C479 /* OCCategory+T1.m */,
+				0DBB448E271EEA6800F9C479 /* OCCategory+T2.h */,
+				0DBB448F271EEA6800F9C479 /* OCCategory+T2.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -271,7 +286,7 @@
 		0D84B71C2716D68D007CB183 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = Ryder;
 				TargetAttributes = {
 					0D84B7232716D68D007CB183 = {
@@ -313,6 +328,9 @@
 				0D84B7E2271847F0007CB183 /* OCWeakProxy.m in Sources */,
 				0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */,
 				0D84B76A271811AE007CB183 /* OCTimer.m in Sources */,
+				0DBB448D271EEA5C00F9C479 /* OCCategory+T1.m in Sources */,
+				0DBB4490271EEA6800F9C479 /* OCCategory+T2.m in Sources */,
+				0DBB448A271EE94800F9C479 /* OCCategory.m in Sources */,
 				0D84B7DF2718345C007CB183 /* OCWeakObj.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +452,7 @@
 		0D84B72C2716D68D007CB183 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -445,6 +464,7 @@
 		0D84B72D2716D68D007CB183 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
 				ENABLE_HARDENED_RUNTIME = YES;
