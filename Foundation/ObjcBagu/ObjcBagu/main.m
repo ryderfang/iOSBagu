@@ -11,16 +11,20 @@
 #import "OCTimer.h"
 #import "OCMsgForwarding.h"
 #import "OCAutoReleasePool.h"
+#import "OCMRC.h"
+#import "OCMethodSwizzling.h"
 
 // iOS runtime: https://github.com/RetVal/objc-runtime
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        [OCProperty run];
+//        [OCProperty run];
 //        [OCTimer run];
 //        [OCMsgForwarding run];
 //        [OCAutoReleasePool run];
+//        [OCMRC run];
+        [OCMethodSwizzling run];
     }
     return 0;
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A813D271EB9B700A42EFD /* OCMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0D669A48271EC24500E191C9 /* OCMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D669A47271EC24500E191C9 /* OCMethodSwizzling.m */; };
 		0D84B7282716D68D007CB183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7272716D68D007CB183 /* main.m */; };
 		0D84B73F2716DB9B007CB183 /* OCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B73E2716DB9B007CB183 /* OCProperty.m */; };
 		0D84B7422716DC4C007CB183 /* OCARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7412716DC4C007CB183 /* OCARC.m */; };
@@ -32,6 +34,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D1A813C271EB9B700A42EFD /* OCMRC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMRC.h; sourceTree = "<group>"; };
+		0D1A813D271EB9B700A42EFD /* OCMRC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMRC.m; sourceTree = "<group>"; };
+		0D669A46271EC24500E191C9 /* OCMethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodSwizzling.h; sourceTree = "<group>"; };
+		0D669A47271EC24500E191C9 /* OCMethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodSwizzling.m; sourceTree = "<group>"; };
 		0D84B7242716D68D007CB183 /* ObjcBagu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjcBagu; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D84B7272716D68D007CB183 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D84B73D2716DB9B007CB183 /* OCProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProperty.h; sourceTree = "<group>"; };
@@ -65,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D669A45271EC21200E191C9 /* MethodSwizzling */ = {
+			isa = PBXGroup;
+			children = (
+				0D669A46271EC24500E191C9 /* OCMethodSwizzling.h */,
+				0D669A47271EC24500E191C9 /* OCMethodSwizzling.m */,
+			);
+			path = MethodSwizzling;
+			sourceTree = "<group>";
+		};
 		0D84B71B2716D68D007CB183 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				0D84B7392716D83D007CB183 /* MessageForwarding */,
+				0D669A45271EC21200E191C9 /* MethodSwizzling */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -165,6 +181,8 @@
 			children = (
 				0D84B7402716DC4C007CB183 /* OCARC.h */,
 				0D84B7412716DC4C007CB183 /* OCARC.m */,
+				0D1A813C271EB9B700A42EFD /* OCMRC.h */,
+				0D1A813D271EB9B700A42EFD /* OCMRC.m */,
 			);
 			path = ARC;
 			sourceTree = "<group>";
@@ -286,9 +304,11 @@
 			files = (
 				0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */,
 				0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */,
+				0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */,
 				0D84B7422716DC4C007CB183 /* OCARC.m in Sources */,
 				0D84B73F2716DB9B007CB183 /* OCProperty.m in Sources */,
 				0D84B7282716D68D007CB183 /* main.m in Sources */,
+				0D669A48271EC24500E191C9 /* OCMethodSwizzling.m in Sources */,
 				0D84B7DC27181729007CB183 /* NSTimer+RRKit.m in Sources */,
 				0D84B7E2271847F0007CB183 /* OCWeakProxy.m in Sources */,
 				0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */,

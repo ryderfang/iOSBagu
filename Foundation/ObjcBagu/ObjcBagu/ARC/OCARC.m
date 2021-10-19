@@ -8,6 +8,7 @@
 
 #import "OCARC.h"
 
+// ARC (Automatic reference counting)
 @implementation OCARC
 
 @end
