@@ -57,7 +57,7 @@
 //    }
 //};
 
-/*
+/* load 流程
  _objc_init
  load_images
  prepare_load_methods
@@ -75,18 +75,59 @@
     NSLog(@"primary load.");
 }
 
+/* initialize 流程 (类第一次接受消息时调用)
+ objc-msg-arm64.s
+    objc_msgSend
+ objc-runtime-new.mm
+     class_getInstanceMethod
+     lookUpImpOrNil
+     lookUpImpOrForward
+     _class_initialize
+     callInitialize
+     objc_msgSend(cls, SEL_initialize)
+ */
 + (void)initialize {
     NSLog(@"primary initialize.");
 }
 
+/* 分类方法合并过程
+ objc-os.mm
+     _objc_init
+     map_images
+    map_images_nolock
+ objc-runtime-new.mm
+     _read_images
+     remethodizeClass
+     attachCategories
+     attachLists
+     realloc、memmove、 memcpy
+ */
 + (void)run {
     OCCategory *cate = [OCCategory new];
+    // 调用最后编译的分类 (T2)
     [cate testSameMethod];
-    [cate getAllInstanceMethods];
+    // 通过遍历方法列表，调用本类的
+    [cate callPrimaryMethod];
+    [cate testAssociatedObject];
 }
 
-- (void)getAllInstanceMethods {
-    
+- (void)callPrimaryMethod {
+    unsigned int count;
+    Method *methods = class_copyMethodList([self class], &count);
+    SEL primarySEL = NULL;
+    IMP primaryIMP = NULL;
+    for (unsigned int i = 0; i < count; i++) {
+        SEL sel = method_getName(methods[i]);
+        NSString *strName = [NSString stringWithCString:sel_getName(sel) encoding:NSUTF8StringEncoding];
+        IMP imp = method_getImplementation(methods[i]);
+        if ([strName isEqualToString:@"testSameMethod"]) {
+            primarySEL = sel;
+            primaryIMP = imp;
+        }
+    }
+    if (primarySEL && primaryIMP) {
+        ((void (*)(id, SEL))primaryIMP)(self, primarySEL);
+    }
 }
 
 // 分类将类中的同名方法覆盖，是在运行时将方法列表插入原类的方法列表前实现的，并没有删除原类的实现。
@@ -96,8 +137,19 @@
 }
 
 // 分类不能添加变量，因为 category_t 的结构中没有 ivar_list; 另一方面，在运行时，对象的所占的空间大小已经确定，无法修改。
+/* 关联对象 objc-references.mm
+  AssociationsManager *s_manager // 静态变量，全局唯一，内部是一个 hashmap
+  AssociationsHashMap, key 是对象指针, value 是另一个 map
+  ObjectAssociationMap, 关联对象的 map, @{key: value}, key 是用户传入的, value 是一个数据结构
+  ObjcAssociation, 存储了 policy 和 value, policy 即 objc_AssociationPolicy, value 就是关联对象的值
+*/
+
+static char *kAssociationKey = "kAssociationKey";
 - (void)testAssociatedObject {
+    objc_setAssociatedObject(self, kAssociationKey, @"kAssociationValue", OBJC_ASSOCIATION_COPY);
     
+    NSString *value = objc_getAssociatedObject(self, kAssociationKey);
+    NSLog(@"%@", value);
 }
 
 @end
