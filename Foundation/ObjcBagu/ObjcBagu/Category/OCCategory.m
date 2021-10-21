@@ -138,10 +138,28 @@
 
 // 分类不能添加变量，因为 category_t 的结构中没有 ivar_list; 另一方面，在运行时，对象的所占的空间大小已经确定，无法修改。
 /* 关联对象 objc-references.mm
-  AssociationsManager *s_manager // 静态变量，全局唯一，内部是一个 hashmap
-  AssociationsHashMap, key 是对象指针, value 是另一个 map
-  ObjectAssociationMap, 关联对象的 map, @{key: value}, key 是用户传入的, value 是一个数据结构
-  ObjcAssociation, 存储了 policy 和 value, policy 即 objc_AssociationPolicy, value 就是关联对象的值
+ ---------------------------------------------------------
+ class AssociationsManager {
+     static OSSpinLock _lock;
+     static AssociationsHashMap *_map;               // associative references:  object pointer -> PtrPtrHashMap.
+ public:
+     AssociationsManager()   { OSSpinLockLock(&_lock); }
+     ~AssociationsManager()  { OSSpinLockUnlock(&_lock); }
+     
+     AssociationsHashMap &associations() {
+         if (_map == NULL)
+             _map = new AssociationsHashMap();
+         return *_map;
+     }
+ };
+
+ OSSpinLock AssociationsManager::_lock = OS_SPINLOCK_INIT;
+ AssociationsHashMap *AssociationsManager::_map = NULL;
+ ---------------------------------------------------------
+ AssociationsManager *s_manager // 静态变量，全局唯一，内部是一个 hashmap
+ AssociationsHashMap, key 是对象指针, value 是另一个 map
+ ObjectAssociationMap, 关联对象的 map, @{key: value}, key 是用户传入的, value 是一个数据结构
+ ObjcAssociation, 存储了 policy 和 value, policy 即 objc_AssociationPolicy, value 就是关联对象的值
 */
 
 static char *kAssociationKey = "kAssociationKey";

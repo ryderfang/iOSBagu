@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D090796271FE2E7004802BD /* OCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D090795271FE2E7004802BD /* OCRuntime.m */; };
 		0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A813D271EB9B700A42EFD /* OCMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0D669A48271EC24500E191C9 /* OCMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D669A47271EC24500E191C9 /* OCMethodSwizzling.m */; };
 		0D84B7282716D68D007CB183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7272716D68D007CB183 /* main.m */; };
@@ -37,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D090794271FE2E7004802BD /* OCRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRuntime.h; sourceTree = "<group>"; };
+		0D090795271FE2E7004802BD /* OCRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRuntime.m; sourceTree = "<group>"; };
 		0D1A813C271EB9B700A42EFD /* OCMRC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMRC.h; sourceTree = "<group>"; };
 		0D1A813D271EB9B700A42EFD /* OCMRC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMRC.m; sourceTree = "<group>"; };
 		0D669A46271EC24500E191C9 /* OCMethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodSwizzling.h; sourceTree = "<group>"; };
@@ -113,7 +116,6 @@
 				0D84B7332716D7D0007CB183 /* AutoReleasePool */,
 				0D84B73A2716D899007CB183 /* Block */,
 				0D84B72F2716D79A007CB183 /* Category */,
-				0D84B7352716D7E5007CB183 /* GCD */,
 				0D84B73C2716D8C1007CB183 /* HotPatch */,
 				0D84B7372716D80C007CB183 /* KVC */,
 				0D84B7362716D805007CB183 /* KVO */,
@@ -154,6 +156,8 @@
 			children = (
 				0D84B7392716D83D007CB183 /* MessageForwarding */,
 				0D669A45271EC21200E191C9 /* MethodSwizzling */,
+				0D090794271FE2E7004802BD /* OCRuntime.h */,
+				0D090795271FE2E7004802BD /* OCRuntime.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -249,6 +253,7 @@
 		0D84B73B2716D8B9007CB183 /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				0D84B7352716D7E5007CB183 /* GCD */,
 			);
 			path = MultiThread;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */,
 				0D84B76A271811AE007CB183 /* OCTimer.m in Sources */,
 				0DBB448D271EEA5C00F9C479 /* OCCategory+T1.m in Sources */,
+				0D090796271FE2E7004802BD /* OCRuntime.m in Sources */,
 				0DBB4490271EEA6800F9C479 /* OCCategory+T2.m in Sources */,
 				0DBB448A271EE94800F9C479 /* OCCategory.m in Sources */,
 				0D84B7DF2718345C007CB183 /* OCWeakObj.m in Sources */,
