@@ -10,11 +10,24 @@
 #import <objc/runtime.h>
 
 @interface RTBar : NSObject
+
+@property (nonatomic, strong) NSString *name;
+
 @end
 @implementation RTBar
+
+- (void)print {
+    NSLog(@"foo's name is: %@", self.name);
+}
+
++ (void)print {
+    NSLog(@"[ClassMethod] RTFoo's name...");
+}
+
 @end
 
 @interface RTFoo : RTBar
+
 @end
 
 @implementation RTFoo
@@ -23,6 +36,39 @@
 - (NSString *)testTypeEncodings:(int)arg1 arg2:(NSString *)arg2 {
     NSLog(@"%d %@", arg1, arg2);
     return [NSString stringWithFormat:@"%d + %@", arg1, arg2];
+}
+
+- (instancetype)init {
+    if (self = [super init]) {
+        NSLog(@"[self class] is %@", [self class]);
+        // [super class] 等于 [RTBar class]，父类如果没有实现，最终调用的是 [NSObject class]
+        /*
+         // NSObject 的实现，注意这里传入的参数是 self !!
+         - (Class)class {
+             return object_getClass(self);
+         }
+         
+         Class object_getClass(id obj)
+         {
+             if (obj) return obj->getIsa();
+             else return Nil;
+         }
+       */
+        // 也就是说 [super class] 最终返回的是当前实例的类 (isa 指针)
+        NSLog(@"[super class] is %@", [super class]);
+        
+        /* 所以这里最终都返回的当前类对象中的 superclass 变量
+         // NSObject superclass 实现
+         - (Class)superclass {
+             return [self class]->superclass;
+         }
+         */
+        NSLog(@"[self superclass] is %@", [self superclass]);
+        NSLog(@"[super superclass] is %@", [super superclass]);
+        
+        self.name = @"Fooook";
+    }
+    return self;
 }
 
 @end
@@ -52,9 +98,9 @@ typedef struct objc_method *Method;
 /*  OC 底层数据结构在 objc.h 中定义
  * objc_object 是所有实例对象的底层结构，内部只有一个 isa 指针，指向类对象 objc_class
  * objc_class 是所有类/元类对象的底层结构，objc_class 继承自 objc_object，所以它也有一个 isa 指针，指向自己的元类
- * 元类指向链: 实例对象 -> 类对象 -> 元类对象 -> 根元类
+ * 元类指向链: 实例对象 -> 类对象 -> 元类对象 -> 根元类 -> 根元类 (根元类的 isa 指向自己)
  * 类的继承链 (super_class): 子类 -> 父类 -> NSObject
- * 元类的继承链 (super_class): 子类元类 -> 父类元类 -> 根元类 -> NSObject -> nil
+ * 元类的继承链 (super_class): 子类元类 -> 父类元类 -> 根元类 -> NSObject -> nil (根元类的父类是 NSObject)
 */
 #import <objc/objc.h>
 // --- 下面几个定义在 objc.h 中 --- //
@@ -96,6 +142,7 @@ typedef struct objc_method *Method;
     [rt testMethodSignature];
     [rt testInvocation];
     [rt testISA];
+    [rt testNSObject];
 }
 
 - (void)testMethod {
@@ -148,6 +195,59 @@ typedef struct objc_method *Method;
 // https://juejin.cn/post/6844904134286524429
 - (void)testISA {
     
+}
+
+- (void)testNSObject {
+    __unused RTFoo *foo = [[RTFoo alloc] init];
+    /*
+     - (BOOL)isKindOfClass:(Class)cls {
+         for (Class tcls = [self class]; tcls; tcls = tcls->superclass) {
+             if (tcls == cls) return YES;
+         }
+         return NO;
+     }
+     + (BOOL)isKindOfClass:(Class)cls {
+         for (Class tcls = self->ISA(); tcls; tcls = tcls->superclass) {
+             if (tcls == cls) return YES;
+         }
+         return NO;
+     }
+     - (BOOL)isMemberOfClass:(Class)cls {
+         return [self class] == cls;
+     }
+     + (BOOL)isMemberOfClass:(Class)cls {
+         return self->ISA() == cls;
+     }
+     + (BOOL)isSubclassOfClass:(Class)cls {
+         for (Class tcls = self; tcls; tcls = tcls->superclass) {
+             if (tcls == cls) return YES;
+         }
+         return NO;
+     }
+     
+     + (Class)class {
+        return self;
+     }
+     - (Class)class {
+        return object_getClass(self);
+     }
+     */
+    // isKindOfClass 判断是否是该类的实例或者其子类的实例
+    // isMemberOfClass 判断是否是该类的实例
+    // !!! 实例的 class 返回自己，类的 class 返回其元类
+    // https://github.com/SummitXY/iOS-Blog/issues/22#issue-455257478
+    // 这里能相等是因为 根元类的 superclass 是 NSObject
+    NSLog(@"[isKindOfClass: %d", [[NSObject class] isKindOfClass:[NSObject class]]);        // 1
+    // NSObject->ISA() != NSObject
+    NSLog(@"[isMemberOfClass: %d", [[NSObject class] isMemberOfClass:[NSObject class]]);   // 0
+    NSLog(@"[isKindOfClass: %d", [[RTFoo class] isKindOfClass:[RTFoo class]]);              // 0
+    NSLog(@"[isKindOfClass: %d", [foo isKindOfClass:[RTFoo class]]);                         // 1
+    NSLog(@"[isMemberOfClass: %d", [[RTFoo class] isMemberOfClass:[RTFoo class]]);         // 0
+    NSLog(@"[isMemberOfClass: %d", [foo isMemberOfClass:[RTFoo class]]);                    // 1
+    
+    id cls = [RTBar class];
+    void *obj = &cls;
+    [(__bridge id)obj print];
 }
 
 @end

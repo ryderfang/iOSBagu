@@ -10,7 +10,7 @@
 
 所以这里只简单列一些要点
 
-### ARC/MRC ⭐️⭐️
+### I. ARC/MRC ★★★☆☆
 
 `ARC is supported in Xcode 4.2 for OS X v10.6 and v10.7 (64-bit applications) and for iOS 4 and iOS 5.`
 
@@ -21,31 +21,43 @@
 
 2. 在 ARC 的工程中使用 MRC，需要在工程中设置源文件的编译选项 `-fno-objc-arc`
 
-### AutoReleasePool ⭐️⭐️⭐️⭐️
+### II. AutoReleasePool ★★★★☆
 
-### Block ⭐️⭐️⭐️⭐️⭐️
+### III. Block ★★★★★
 
-### Category ⭐️⭐️⭐️⭐️⭐️
+### IV. Category ★★★★★
 
-### HotPatch ⭐️
+### V. HotPatch ★☆☆☆☆
 
-### KVC ⭐️⭐️
+### VI. KVC ★★☆☆☆
 
-### KVO ⭐️⭐️⭐️
+### VII. KVO ★★★★☆
 
-### MultiThread ⭐️⭐️⭐️⭐️
+### VIII. MultiThread ★★★★☆️
 
-### Network ⭐️⭐️⭐️
+### IX. Network ★★★☆☆️
 
-### NSTimer ⭐️⭐️⭐️⭐️⭐️
+### X. NSTimer ★★★★★️
 
-### Property ⭐️⭐️⭐️⭐️⭐️
+### XI. Property ★★★★★️
 
-### Runloop ⭐️⭐️⭐️⭐️
+### XII. Runloop ★★★★☆️
 
-### Runtime ⭐️⭐️⭐️⭐️⭐️
+### XIII. Runtime ★★★★★
 
+需要了解几个关键概念：
 
+* isa
+
+* objc_object
+
+* objc_class
+
+* NSObject
+
+* class 的本质
+
+---
 ## UIKit
 
 > UIKit/AppKit 与界面相关的八股知识点

@@ -26,9 +26,9 @@ int main(int argc, const char * argv[]) {
 //        [OCMsgForwarding run];
 //        [OCAutoReleasePool run];
 //        [OCMRC run];
-//        [OCMethodSwizzling run];
+        [OCMethodSwizzling run];
 //        [OCCategory run];
-        [OCRuntime run];
+//        [OCRuntime run];
     }
     return 0;
 }
