@@ -45,11 +45,13 @@
 
 ### XIII. Runtime ★★★★★
 
+> 详解：[Runtime 详解](Foundation/Notes/runtime.md)
+
 需要了解几个关键概念：
 
-定义在 `#import <objc/objc.h>` 中
-
 * isa/objc_object
+
+定义在 `#import <objc/objc.h>` 中
 
 ```
 /// An opaque type that represents an Objective-C class.
@@ -119,14 +121,11 @@ Class object_getClass(id obj) {
 + (Class)class {
    return self;
 }
-
 ```
 
 一图胜千言，引用 Runtime 工程师 [Greg Parker](http://www.sealiesoftware.com/blog/archive/2009/04/14/objc_explain_Classes_and_metaclasses.html) 在其博客中给出的经典图
 
 ![](Assets/class-diagram.png)
-
-[Runtime 详解](Foundation/Notes/runtime.md =100x100)
 
 ---
 ## UIKit
