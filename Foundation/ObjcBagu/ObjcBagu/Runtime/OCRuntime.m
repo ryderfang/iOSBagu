@@ -235,7 +235,11 @@ typedef struct objc_method *Method;
     // isKindOfClass 判断是否是该类的实例或者其子类的实例
     // isMemberOfClass 判断是否是该类的实例
     // !!! 实例的 class 返回自己，类的 class 返回其元类
+    // https://www.jianshu.com/p/ae5c32708bc6
     // https://github.com/SummitXY/iOS-Blog/issues/22#issue-455257478
+    // https://www.codenong.com/jsd88e4321c21a/
+    // https://juejin.cn/post/6873793240655462413
+    // https://zhuanlan.zhihu.com/p/387802000
     // 这里能相等是因为 根元类的 superclass 是 NSObject
     NSLog(@"[isKindOfClass: %d", [[NSObject class] isKindOfClass:[NSObject class]]);        // 1
     // NSObject->ISA() != NSObject
