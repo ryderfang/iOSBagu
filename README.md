@@ -17,111 +17,83 @@
 现在除了一些老项目，基本没有 MRC 为主的代码了，所以只需要简单了解下 MRC 与 ARC 的区别即可
 
 1. MRC 需要手动写 dealloc，并且一定要最后再调用父类的 dealloc；
-   ARC 一般不需要写 dealloc，也不需要调用 [super dealloc]。移除 NSNotification Observer 和 KVC 例外。
+   ARC 一般不需要写 dealloc，也不需要调用 [super dealloc]。移除 NSNotification Observer 和 KVC Observer 例外。
 
 2. 在 ARC 的工程中使用 MRC，需要在工程中设置源文件的编译选项 `-fno-objc-arc`
 
 ### II. AutoReleasePool ★★★★☆
 
+* AutoReleasePool 的数据结构
+
+* AutoReleasePool 与 @autoreleasePool
+
 ### III. Block ★★★★★
+
+* block 的结构体类型
+
+* block 如何捕获外部变量
+
+* 循环引用 与 [Weak-Strong Dance](Foundation/Notes/weak-strong-dance.md)
 
 ### IV. Category ★★★★★
 
+* load 加载时机
+
+* load 与 initialze
+
+* category 覆盖原类方法的原理
+
+* category 同名方法调用顺序
+
 ### V. HotPatch ★☆☆☆☆
+
+* JSPatch 的原理
 
 ### VI. KVC ★★☆☆☆
 
+* KVC 是如何实现的
+
 ### VII. KVO ★★★★☆
+
+* KVO 的原理
 
 ### VIII. MultiThread ★★★★☆️
 
+* 哪些多线程方法
+
+* 互斥锁与自旋锁
 ### IX. Network ★★★☆☆️
 
+* NSURLSession 与 NSURLConnection
 ### X. NSTimer ★★★★★️
+
+* timer 与 Runloop
+
+* timer 导致循环引用的产生与解决
 
 ### XI. Property ★★★★★️
 
+* 不同属性的区别
+
+* weak 与 copy
+
+* atomic 并不是线程安全的
+
+* 如何实现一个弱引用容器
+   - \+ [NSPointerArray weakObjectsPointerArray] 弱引用数组
+   - \+ [NSMapTable weakToWeakObjectsMapTable] 弱引用表
+   - \+ [NSHashTable weakObjectsHashTable] 弱引用 hash 表
+   - \+ [NSValue valueWithNonretainedObject:] 弱引用对象
+
 ### XII. Runloop ★★★★☆️
+
+* Runloop 与线程的关系
+
+* 如何实现一个常驻线程
 
 ### XIII. Runtime ★★★★★
 
 > 详解：[Runtime 详解](Foundation/Notes/runtime.md)
-
-需要了解几个关键概念：
-
-* isa/objc_object
-
-定义在 `#import <objc/objc.h>` 中
-
-```
-/// An opaque type that represents an Objective-C class.
-typedef struct objc_class *Class;
-
-/// Represents an instance of a class.
-struct objc_object {
-    Class _Nonnull isa  OBJC_ISA_AVAILABILITY;
-};
-
-/// A pointer to an instance of a class.
-typedef struct objc_object *id;
-```
-
-id 表示所有对象的实例类型，objc_object 表示一个类的实例，其中只有一个指针，就是 isa，指向的是这个实例的类。
-
-* objc_class
-
-定义在 `#import <objc/runtime.h>` 中
-
-```
-struct objc_class {
-    Class _Nonnull isa  OBJC_ISA_AVAILABILITY;
-
-#if !__OBJC2__
-    Class _Nullable super_class                              OBJC2_UNAVAILABLE;
-    const char * _Nonnull name                               OBJC2_UNAVAILABLE;
-    long version                                             OBJC2_UNAVAILABLE;
-    long info                                                OBJC2_UNAVAILABLE;
-    long instance_size                                       OBJC2_UNAVAILABLE;
-    struct objc_ivar_list * _Nullable ivars                  OBJC2_UNAVAILABLE;
-    struct objc_method_list * _Nullable * _Nullable methodLists                    OBJC2_UNAVAILABLE;
-    struct objc_cache * _Nonnull cache                       OBJC2_UNAVAILABLE;
-    struct objc_protocol_list * _Nullable protocols          OBJC2_UNAVAILABLE;
-#endif
-
-} OBJC2_UNAVAILABLE;
-/* Use `Class` instead of `struct objc_class *` */
-```
-
-在底层实现中 objc_class 是继承自 objc_object 的
-
-objc_class 中也有一个 isa 指针，指向了自己的元类。
-
-* NSObject
-
-NSObject 是所有 OC 对象的基类 (除 CGRect 这类结构体)，也可以称为根类 (Root Class)。
-
-* class 的本质
-
-在 NSObject 中定义了两种 class 方法：
-
-```
-- (Class)class OBJC_SWIFT_UNAVAILABLE("use 'type(of: anObject)' instead");
-// 实例方法，返回 isa 指针，也就是类对象
-- (Class)class {
-   return object_getClass(self);
-}
-
-Class object_getClass(id obj) {
-   if (obj) return obj->getIsa();
-   else return Nil;
-}
-
-+ (Class)class OBJC_SWIFT_UNAVAILABLE("use 'aClass.self' instead");
-// 类方法，返回自身
-+ (Class)class {
-   return self;
-}
-```
 
 一图胜千言，引用 Runtime 工程师 [Greg Parker](http://www.sealiesoftware.com/blog/archive/2009/04/14/objc_explain_Classes_and_metaclasses.html) 在其博客中给出的经典图
 
