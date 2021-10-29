@@ -25,7 +25,7 @@
 
 * AutoReleasePool 的数据结构
 
-* AutoReleasePool 与 @autoreleasePool
+* AutoReleasePool 与 @autoreleasepool
 
 ### III. Block ★★★★★
 
