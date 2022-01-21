@@ -17,7 +17,7 @@
 @implementation RTBar
 
 - (void)print {
-    NSLog(@"foo's name is: %@", self.name);
+    NSLog(@"bar's name is: %@", self.name);
 }
 
 + (void)print {
@@ -36,6 +36,15 @@
 - (NSString *)testTypeEncodings:(int)arg1 arg2:(NSString *)arg2 {
     NSLog(@"%d %@", arg1, arg2);
     return [NSString stringWithFormat:@"%d + %@", arg1, arg2];
+}
+
+- (void)print {
+    NSLog(@"foo's name is: %@", self.name);
+}
+
+- (void)callSuper {
+    // will call [self print]? NO!
+    [super print];
 }
 
 - (instancetype)init {
@@ -73,62 +82,9 @@
 
 @end
 
-/*
- * SEL: 函数名编号
- * IMP: 函数指针
- * Method: objc_method 对象
- */
-
-// 本质上就是一个 hash 值，整数
-typedef uintptr_t SEL;
-typedef struct objc_selector *SEL;
-
-// 函数指针，前两个参数固定是 target 和 SEL
-typedef void (*IMP)(void /* id, SEL, ... */ );
-
-struct objc_method {
-    SEL _Nonnull method_name ;
-    char * _Nullable method_types;
-    IMP _Nonnull method_imp;
-};
-
-typedef struct objc_method *Method;
-
-
-/*  OC 底层数据结构在 objc.h 中定义
- * objc_object 是所有实例对象的底层结构，内部只有一个 isa 指针，指向类对象 objc_class
- * objc_class 是所有类/元类对象的底层结构，objc_class 继承自 objc_object，所以它也有一个 isa 指针，指向自己的元类
- * 元类指向链: 实例对象 -> 类对象 -> 元类对象 -> 根元类 -> 根元类 (根元类的 isa 指向自己)
- * 类的继承链 (super_class): 子类 -> 父类 -> NSObject
- * 元类的继承链 (super_class): 子类元类 -> 父类元类 -> 根元类 -> NSObject -> nil (根元类的父类是 NSObject)
-*/
 #import <objc/objc.h>
-// --- 下面几个定义在 objc.h 中 --- //
-//typedef struct objc_class *Class;
-//
-//struct objc_object {
-//    Class _Nonnull isa  OBJC_ISA_AVAILABILITY;
-//};
-//
-//typedef struct objc_object *id;
 #import <objc/runtime.h>
-// --- 定义在 runtime.h 中 --- //
-//struct objc_class {
-//    Class _Nonnull isa  OBJC_ISA_AVAILABILITY;
-//
-//#if !__OBJC2__
-//    Class _Nullable super_class                              OBJC2_UNAVAILABLE;
-//    const char * _Nonnull name                               OBJC2_UNAVAILABLE;
-//    long version                                             OBJC2_UNAVAILABLE;
-//    long info                                                OBJC2_UNAVAILABLE;
-//    long instance_size                                       OBJC2_UNAVAILABLE;
-//    struct objc_ivar_list * _Nullable ivars                  OBJC2_UNAVAILABLE;
-//    struct objc_method_list * _Nullable * _Nullable methodLists                    OBJC2_UNAVAILABLE;
-//    struct objc_cache * _Nonnull cache                       OBJC2_UNAVAILABLE;
-//    struct objc_protocol_list * _Nullable protocols          OBJC2_UNAVAILABLE;
-//#endif
-//
-//} OBJC2_UNAVAILABLE;
+// https://ryderfang.com/class-object-isa/
 
 @interface OCRuntime ()
 
@@ -138,11 +94,12 @@ typedef struct objc_method *Method;
 
 + (void)run {
     OCRuntime *rt = [OCRuntime new];
-    [rt testMethod];
-    [rt testMethodSignature];
-    [rt testInvocation];
+//    [rt testMethod];
+//    [rt testMethodSignature];
+//    [rt testInvocation];
     [rt testISA];
-    [rt testNSObject];
+//    [rt testNSObject];
+//    [rt testSuper];
 }
 
 - (void)testMethod {
@@ -194,7 +151,45 @@ typedef struct objc_method *Method;
 
 // https://juejin.cn/post/6844904134286524429
 - (void)testISA {
+    // 继承链 (instance -> class -> superClass -> NSObject -> nil)
+    RTFoo *foo = [RTFoo new];
+    NSLog(@"instance addr: %p", foo);
+    id rootClass = nil;
     
+    NSLog(@"objc_getClass: %@ %p", objc_getClass("RTFoo"), objc_getClass("RTFoo"));
+    NSLog(@"NSClassFromString: %@ %p", NSClassFromString(@"RTFoo"), NSClassFromString(@"RTFoo"));
+    NSLog(@"object_getClass: %@ %p", object_getClass(foo), object_getClass(foo));
+    
+    Class cls = [foo class];
+    while (cls) {
+        NSLog(@"class: %s addr: %p", object_getClassName(cls), cls);
+        if (!class_getSuperclass(cls)) {
+            rootClass = cls;
+        }
+        cls = class_getSuperclass(cls);
+    }
+    
+    // isa 链 (instance -> class -> metaClass -> rootMetaClass <-> rootMetaClass)
+    cls = [foo class];
+    id rootMetaClass = nil;
+    while (cls) {
+        NSLog(@"isa: %s addr: %p", object_getClassName(cls), cls);
+        Class tmp = object_getClass(cls);
+        if (tmp == cls) {
+            rootMetaClass = cls;
+            break;
+        }
+        cls = tmp;
+    }
+    
+    // meta 继承链 (metaClass -> superMetaClass -> rootMetaClass -> rootObject -> nil)
+    cls = object_getClass([foo class]);
+    while (cls) {
+        NSLog(@"metaClass: %s addr: %p", object_getClassName(cls), cls);
+        cls = class_getSuperclass(cls);
+    }
+    
+    NSLog(@"rootClass: %p, rootMetaClass: %p", rootClass, rootMetaClass);
 }
 
 - (void)testNSObject {
@@ -252,6 +247,11 @@ typedef struct objc_method *Method;
     id cls = [RTBar class];
     void *obj = &cls;
     [(__bridge id)obj print];
+}
+
+- (void)testSuper {
+    RTFoo *foo = [[RTFoo alloc] init];
+    [foo callSuper];
 }
 
 @end

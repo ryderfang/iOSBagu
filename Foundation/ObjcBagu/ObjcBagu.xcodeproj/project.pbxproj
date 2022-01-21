@@ -20,6 +20,7 @@
 		0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7E42718513F007CB183 /* OCMsgForwarding.m */; };
 		0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B8562719298D007CB183 /* OCAutoReleasePool.mm */; };
 		0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B8592719328E007CB183 /* OCRunloop.m */; };
+		0D92F0AF279021ED00DED6AE /* hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D92F0AE279021ED00DED6AE /* hello.m */; };
 		0DBB448A271EE94800F9C479 /* OCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB4489271EE94800F9C479 /* OCCategory.m */; };
 		0DBB448D271EEA5C00F9C479 /* OCCategory+T1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448C271EEA5C00F9C479 /* OCCategory+T1.m */; };
 		0DBB4490271EEA6800F9C479 /* OCCategory+T2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448F271EEA6800F9C479 /* OCCategory+T2.m */; };
@@ -64,6 +65,7 @@
 		0D84B8562719298D007CB183 /* OCAutoReleasePool.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCAutoReleasePool.mm; sourceTree = "<group>"; };
 		0D84B8582719328E007CB183 /* OCRunloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRunloop.h; sourceTree = "<group>"; };
 		0D84B8592719328E007CB183 /* OCRunloop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRunloop.m; sourceTree = "<group>"; };
+		0D92F0AE279021ED00DED6AE /* hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hello.m; sourceTree = "<group>"; };
 		0DBB4488271EE94800F9C479 /* OCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCategory.h; sourceTree = "<group>"; };
 		0DBB4489271EE94800F9C479 /* OCCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCategory.m; sourceTree = "<group>"; };
 		0DBB448B271EEA5C00F9C479 /* OCCategory+T1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCategory+T1.h"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				0D669A45271EC21200E191C9 /* MethodSwizzling */,
 				0D090794271FE2E7004802BD /* OCRuntime.h */,
 				0D090795271FE2E7004802BD /* OCRuntime.m */,
+				0D92F0AE279021ED00DED6AE /* hello.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */,
 				0D84B76A271811AE007CB183 /* OCTimer.m in Sources */,
 				0DBB448D271EEA5C00F9C479 /* OCCategory+T1.m in Sources */,
+				0D92F0AF279021ED00DED6AE /* hello.m in Sources */,
 				0D090796271FE2E7004802BD /* OCRuntime.m in Sources */,
 				0DBB4490271EEA6800F9C479 /* OCCategory+T2.m in Sources */,
 				0DBB448A271EE94800F9C479 /* OCCategory.m in Sources */,
