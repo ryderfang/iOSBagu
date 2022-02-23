@@ -156,11 +156,10 @@
     NSLog(@"instance addr: %p", foo);
     id rootClass = nil;
     
-    NSLog(@"objc_getClass: %@ %p", objc_getClass("RTFoo"), objc_getClass("RTFoo"));
-    NSLog(@"NSClassFromString: %@ %p", NSClassFromString(@"RTFoo"), NSClassFromString(@"RTFoo"));
-    NSLog(@"object_getClass: %@ %p", object_getClass(foo), object_getClass(foo));
-    
     Class cls = [foo class];
+    NSLog(@"[class] %p %p \n[self] %p [objc_getClass] %p\n[object_getClass] %p [NSClassFromString] %p", cls, [RTFoo class],
+          [cls self], objc_getClass(object_getClassName(cls)), object_getClass(foo), NSClassFromString(@"RTFoo"));
+    
     while (cls) {
         NSLog(@"class: %s addr: %p", object_getClassName(cls), cls);
         if (!class_getSuperclass(cls)) {

@@ -39,6 +39,8 @@
 
 + (void)run {
     OCProperty *p = [OCProperty new];
+    // readonly 会生成 ivar + getter，没有 setter 方法
+    p->_rbIns = YES;
     [p testAssign];
     [p testWeak];
     [p testCopy];

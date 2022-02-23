@@ -1,0 +1,16 @@
+//
+//  ObjcHeader.pch
+//  ObjcBagu
+//
+//  Created by Ryder Fang on 2022/2/23.
+//  Copyright © 2022 Ryder. All rights reserved.
+//
+
+#ifndef ObjcHeader_pch
+#define ObjcHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "CommonObject.h"
+
+#endif /* ObjcHeader_pch */
