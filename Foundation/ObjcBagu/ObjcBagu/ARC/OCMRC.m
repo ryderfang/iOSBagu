@@ -6,6 +6,8 @@
 //  Copyright © 2021 Ryder. All rights reserved.
 //
 
+static const CGFloat kFloat = 1.0;
+
 #import "OCMRC.h"
 
 @interface OCMRC ()

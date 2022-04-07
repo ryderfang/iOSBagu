@@ -84,7 +84,6 @@
 
 #import <objc/objc.h>
 #import <objc/runtime.h>
-// https://ryderfang.com/class-object-isa/
 
 @interface OCRuntime ()
 
@@ -150,6 +149,7 @@
 }
 
 // https://juejin.cn/post/6844904134286524429
+// https://ryderfang.com/class-object-isa/
 - (void)testISA {
     // 继承链 (instance -> class -> superClass -> NSObject -> nil)
     RTFoo *foo = [RTFoo new];

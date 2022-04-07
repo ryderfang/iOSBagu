@@ -32,6 +32,7 @@
 @property (nonatomic, copy) NSString *strCopy;
 @property (nonatomic, strong) NSString *strStrong;
 @property (nonatomic, assign) BOOL dyBool;
+@property (nonatomic, strong) NSArray *synArray;
 
 @end
 
@@ -111,6 +112,18 @@
 
 - (BOOL)dyBool {
     return _dyBool;
+}
+
+// 如果不用 @synthesize 会报错，因为同时实现了 getter/setter 后，系统不再生成 ivar
+// Use of undeclared identifier '_synArray'
+@synthesize synArray = _synArray;
+
+- (NSArray *)synArray {
+    return _synArray;
+}
+
+- (void)setSynArray:(NSArray *)synArray {
+    _synArray = synArray;
 }
 
 @end
