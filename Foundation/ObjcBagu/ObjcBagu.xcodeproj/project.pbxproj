@@ -10,6 +10,7 @@
 		0D090796271FE2E7004802BD /* OCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D090795271FE2E7004802BD /* OCRuntime.m */; };
 		0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A813D271EB9B700A42EFD /* OCMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0D444F2627C6391F00F92391 /* CommonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC8B627C6317B00868FC5 /* CommonObject.m */; };
+		0D5E544428003C97008C9D17 /* OCProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E544328003C97008C9D17 /* OCProtocolImpl.m */; };
 		0D669A48271EC24500E191C9 /* OCMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D669A47271EC24500E191C9 /* OCMethodSwizzling.m */; };
 		0D84B7282716D68D007CB183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7272716D68D007CB183 /* main.m */; };
 		0D84B73F2716DB9B007CB183 /* OCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B73E2716DB9B007CB183 /* OCProperty.m */; };
@@ -47,6 +48,9 @@
 		0D3DC8B127C6310300868FC5 /* ObjcHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcHeader.pch; sourceTree = "<group>"; };
 		0D3DC8B627C6317B00868FC5 /* CommonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonObject.m; sourceTree = "<group>"; };
 		0D3DC8B727C6317B00868FC5 /* CommonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonObject.h; sourceTree = "<group>"; };
+		0D5E53CF28002D54008C9D17 /* OCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProtocol.h; sourceTree = "<group>"; };
+		0D5E544228003C97008C9D17 /* OCProtocolImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProtocolImpl.h; sourceTree = "<group>"; };
+		0D5E544328003C97008C9D17 /* OCProtocolImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCProtocolImpl.m; sourceTree = "<group>"; };
 		0D669A46271EC24500E191C9 /* OCMethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodSwizzling.h; sourceTree = "<group>"; };
 		0D669A47271EC24500E191C9 /* OCMethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodSwizzling.m; sourceTree = "<group>"; };
 		0D84B7242716D68D007CB183 /* ObjcBagu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjcBagu; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +102,16 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		0D5E53CE28002D31008C9D17 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0D5E53CF28002D54008C9D17 /* OCProtocol.h */,
+				0D5E544228003C97008C9D17 /* OCProtocolImpl.h */,
+				0D5E544328003C97008C9D17 /* OCProtocolImpl.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		0D669A45271EC21200E191C9 /* MethodSwizzling */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,11 +142,11 @@
 			children = (
 				0D84B7272716D68D007CB183 /* main.m */,
 				0D3DC8B127C6310300868FC5 /* ObjcHeader.pch */,
-				0D3DC8B527C6317B00868FC5 /* Common */,
 				0D84B7342716D7D8007CB183 /* ARC */,
 				0D84B7332716D7D0007CB183 /* AutoReleasePool */,
 				0D84B73A2716D899007CB183 /* Block */,
 				0D84B72F2716D79A007CB183 /* Category */,
+				0D3DC8B527C6317B00868FC5 /* Common */,
 				0D84B73C2716D8C1007CB183 /* HotPatch */,
 				0D84B7372716D80C007CB183 /* KVC */,
 				0D84B7362716D805007CB183 /* KVO */,
@@ -140,6 +154,7 @@
 				0D84B7382716D82D007CB183 /* Network */,
 				0D84B7312716D7AC007CB183 /* NSTimer */,
 				0D84B72E2716D771007CB183 /* Property */,
+				0D5E53CE28002D31008C9D17 /* Protocol */,
 				0D84B7322716D7B4007CB183 /* Runloop */,
 				0D84B7302716D7A3007CB183 /* Runtime */,
 			);
@@ -342,6 +357,7 @@
 			files = (
 				0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */,
 				0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */,
+				0D5E544428003C97008C9D17 /* OCProtocolImpl.m in Sources */,
 				0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */,
 				0D84B7422716DC4C007CB183 /* OCARC.m in Sources */,
 				0D84B73F2716DB9B007CB183 /* OCProperty.m in Sources */,

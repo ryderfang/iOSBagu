@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:StaticLib/BGStaticLib/BGStaticLib.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIKit/UIKitBagu/UIKitBagu.xcodeproj">
    </FileRef>
    <FileRef

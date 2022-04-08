@@ -15,6 +15,7 @@
 #import "OCMethodSwizzling.h"
 #import "OCCategory.h"
 #import "OCRuntime.h"
+#import "OCProtocolImpl.h"
 
 // iOS runtime: https://github.com/RetVal/objc-runtime
 
@@ -28,7 +29,8 @@ int main(int argc, const char * argv[]) {
 //        [OCMRC run];
 //        [OCMethodSwizzling run];
 //        [OCCategory run];
-        [OCRuntime run];
+//        [OCRuntime run];
+        [OCProtocolImpl run];
     }
     return 0;
 }
