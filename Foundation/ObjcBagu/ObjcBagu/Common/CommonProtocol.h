@@ -1,13 +1,16 @@
 //
-//  OCProtocolImpl.h
+//  CommonProtocol.h
 //  ObjcBagu
 //
-//  Created by Ryder Fang on 2022/4/8.
+//  Created by Ryder Fang on 2022/4/10.
 //  Copyright © 2022 Ryder. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface OCProtocolImpl : NSObject <CommonProtocol>
+@protocol CommonProtocol <NSObject>
+
++ (void)run;
 
 @end
+

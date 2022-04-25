@@ -7,30 +7,34 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OCProperty.h"
-#import "OCTimer.h"
-#import "OCMsgForwarding.h"
 #import "OCAutoReleasePool.h"
+#import "OCCategory.h"
+#import "OCGCD.h"
 #import "OCMRC.h"
 #import "OCMethodSwizzling.h"
-#import "OCCategory.h"
-#import "OCRuntime.h"
+#import "OCMsgForwarding.h"
+#import "OCProperty.h"
 #import "OCProtocolImpl.h"
-
-// iOS runtime: https://github.com/RetVal/objc-runtime
-
+#import "OCRuntime.h"
+#import "OCTimer.h"
+// OC -> Swift
+#import "ObjcBagu-Swift.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-//        [OCProperty run];
-//        [OCTimer run];
-//        [OCMsgForwarding run];
 //        [OCAutoReleasePool run];
+//        [OCCategory run];
+//        [OCGCD run];
 //        [OCMRC run];
 //        [OCMethodSwizzling run];
-//        [OCCategory run];
+//        [OCMsgForwarding run];
+//        [OCProperty run];
+//        [OCProtocolImpl run];
 //        [OCRuntime run];
-        [OCProtocolImpl run];
+//        [OCTimer run];
+        
+        SWTemp *temp = [[SWTemp alloc] init];
+        [temp hello];
     }
     return 0;
 }

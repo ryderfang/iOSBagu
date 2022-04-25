@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OCMRC : NSObject
-
-+ (void)run;
+@interface OCMRC : NSObject <CommonProtocol>
 
 @end
 

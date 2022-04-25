@@ -23,6 +23,8 @@
 		0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B8562719298D007CB183 /* OCAutoReleasePool.mm */; };
 		0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B8592719328E007CB183 /* OCRunloop.m */; };
 		0D92F0AF279021ED00DED6AE /* hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D92F0AE279021ED00DED6AE /* hello.m */; };
+		0DB6B21E28117CB400A0A5F3 /* SWTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6B21D28117CB400A0A5F3 /* SWTemp.swift */; };
+		0DB7B1302802A59B0036CD76 /* OCGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7B12F2802A59B0036CD76 /* OCGCD.m */; };
 		0DBB448A271EE94800F9C479 /* OCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB4489271EE94800F9C479 /* OCCategory.m */; };
 		0DBB448D271EEA5C00F9C479 /* OCCategory+T1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448C271EEA5C00F9C479 /* OCCategory+T1.m */; };
 		0DBB4490271EEA6800F9C479 /* OCCategory+T2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448F271EEA6800F9C479 /* OCCategory+T2.m */; };
@@ -45,7 +47,7 @@
 		0D090795271FE2E7004802BD /* OCRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRuntime.m; sourceTree = "<group>"; };
 		0D1A813C271EB9B700A42EFD /* OCMRC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMRC.h; sourceTree = "<group>"; };
 		0D1A813D271EB9B700A42EFD /* OCMRC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMRC.m; sourceTree = "<group>"; };
-		0D3DC8B127C6310300868FC5 /* ObjcHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcHeader.pch; sourceTree = "<group>"; };
+		0D3DC8B127C6310300868FC5 /* OCPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPrefix.pch; sourceTree = "<group>"; };
 		0D3DC8B627C6317B00868FC5 /* CommonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonObject.m; sourceTree = "<group>"; };
 		0D3DC8B727C6317B00868FC5 /* CommonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonObject.h; sourceTree = "<group>"; };
 		0D5E53CF28002D54008C9D17 /* OCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProtocol.h; sourceTree = "<group>"; };
@@ -74,6 +76,11 @@
 		0D84B8582719328E007CB183 /* OCRunloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRunloop.h; sourceTree = "<group>"; };
 		0D84B8592719328E007CB183 /* OCRunloop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRunloop.m; sourceTree = "<group>"; };
 		0D92F0AE279021ED00DED6AE /* hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hello.m; sourceTree = "<group>"; };
+		0DB6B21C28117CB400A0A5F3 /* ObjcBagu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcBagu-Bridging-Header.h"; sourceTree = "<group>"; };
+		0DB6B21D28117CB400A0A5F3 /* SWTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTemp.swift; sourceTree = "<group>"; };
+		0DB7B12E2802A59B0036CD76 /* OCGCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCGCD.h; sourceTree = "<group>"; };
+		0DB7B12F2802A59B0036CD76 /* OCGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGCD.m; sourceTree = "<group>"; };
+		0DB7B1312802A5CB0036CD76 /* CommonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonProtocol.h; sourceTree = "<group>"; };
 		0DBB4488271EE94800F9C479 /* OCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCategory.h; sourceTree = "<group>"; };
 		0DBB4489271EE94800F9C479 /* OCCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCategory.m; sourceTree = "<group>"; };
 		0DBB448B271EEA5C00F9C479 /* OCCategory+T1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCategory+T1.h"; sourceTree = "<group>"; };
@@ -98,6 +105,7 @@
 			children = (
 				0D3DC8B727C6317B00868FC5 /* CommonObject.h */,
 				0D3DC8B627C6317B00868FC5 /* CommonObject.m */,
+				0DB7B1312802A5CB0036CD76 /* CommonProtocol.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -141,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				0D84B7272716D68D007CB183 /* main.m */,
-				0D3DC8B127C6310300868FC5 /* ObjcHeader.pch */,
+				0D3DC8B127C6310300868FC5 /* OCPrefix.pch */,
 				0D84B7342716D7D8007CB183 /* ARC */,
 				0D84B7332716D7D0007CB183 /* AutoReleasePool */,
 				0D84B73A2716D899007CB183 /* Block */,
@@ -157,6 +165,7 @@
 				0D5E53CE28002D31008C9D17 /* Protocol */,
 				0D84B7322716D7B4007CB183 /* Runloop */,
 				0D84B7302716D7A3007CB183 /* Runtime */,
+				0DEE07F6281165B8002A08C6 /* Swift */,
 			);
 			path = ObjcBagu;
 			sourceTree = "<group>";
@@ -242,6 +251,8 @@
 		0D84B7352716D7E5007CB183 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
+				0DB7B12E2802A59B0036CD76 /* OCGCD.h */,
+				0DB7B12F2802A59B0036CD76 /* OCGCD.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -298,6 +309,15 @@
 			path = HotPatch;
 			sourceTree = "<group>";
 		};
+		0DEE07F6281165B8002A08C6 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				0DB6B21D28117CB400A0A5F3 /* SWTemp.swift */,
+				0DB6B21C28117CB400A0A5F3 /* ObjcBagu-Bridging-Header.h */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,6 +349,7 @@
 				TargetAttributes = {
 					0D84B7232716D68D007CB183 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -359,12 +380,14 @@
 				0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */,
 				0D5E544428003C97008C9D17 /* OCProtocolImpl.m in Sources */,
 				0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */,
+				0DB6B21E28117CB400A0A5F3 /* SWTemp.swift in Sources */,
 				0D84B7422716DC4C007CB183 /* OCARC.m in Sources */,
 				0D84B73F2716DB9B007CB183 /* OCProperty.m in Sources */,
 				0D444F2627C6391F00F92391 /* CommonObject.m in Sources */,
 				0D84B7282716D68D007CB183 /* main.m in Sources */,
 				0D669A48271EC24500E191C9 /* OCMethodSwizzling.m in Sources */,
 				0D84B7DC27181729007CB183 /* NSTimer+RRKit.m in Sources */,
+				0DB7B1302802A59B0036CD76 /* OCGCD.m in Sources */,
 				0D84B7E2271847F0007CB183 /* OCWeakProxy.m in Sources */,
 				0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */,
 				0D84B76A271811AE007CB183 /* OCTimer.m in Sources */,
@@ -494,26 +517,43 @@
 		0D84B72C2716D68D007CB183 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
 				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_PREFIX_HEADER = ObjcBagu/ObjcHeader.pch;
+				GCC_PREFIX_HEADER = ObjcBagu/OCPrefix.pch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.objc.bagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjcBagu/Swift/ObjcBagu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		0D84B72D2716D68D007CB183 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
 				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_PREFIX_HEADER = ObjcBagu/ObjcHeader.pch;
+				GCC_PREFIX_HEADER = ObjcBagu/OCPrefix.pch;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.objc.bagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjcBagu/Swift/ObjcBagu-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

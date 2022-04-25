@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCMsgForwarding : NSObject
-
-+ (void)run;
+@interface OCMsgForwarding : NSObject <CommonProtocol>
 
 @end
 

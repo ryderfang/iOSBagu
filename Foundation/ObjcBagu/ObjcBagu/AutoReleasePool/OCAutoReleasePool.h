@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCAutoReleasePool : NSObject
-
-+ (void)run;
+@interface OCAutoReleasePool : NSObject <CommonProtocol>
 
 @end
 

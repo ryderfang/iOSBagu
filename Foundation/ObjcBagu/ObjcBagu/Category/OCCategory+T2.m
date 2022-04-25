@@ -11,16 +11,16 @@
 @implementation OCCategory (T2)
 
 + (void)load {
-    NSLog(@"category T2 load.");
+    NSLog(@"OCCategory+T2 load.");
 }
 
 // 与普通方法一样，会覆盖类的实现，调用最后编译的分类方法
 + (void)initialize {
-    NSLog(@"category T2 initialize.");
+    NSLog(@"OCCategory+T2 initialize.");
 }
 
 - (void)testSameMethod {
-    NSLog(@"category T2 method called.");
+    NSLog(@"OCCategory+T2 method called.");
 }
 
 @end

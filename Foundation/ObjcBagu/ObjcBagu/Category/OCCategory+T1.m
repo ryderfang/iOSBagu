@@ -11,15 +11,15 @@
 @implementation OCCategory (T1)
 
 + (void)load {
-    NSLog(@"category T1 load.");
+    NSLog(@"OCCategory+T1 load.");
 }
 
 + (void)initialize {
-    NSLog(@"category T1 initialize.");
+    NSLog(@"OCCategory+T1 initialize.");
 }
 
 - (void)testSameMethod {
-    NSLog(@"category T1 method called.");
+    NSLog(@"OCCategory+T1 method called.");
 }
 
 @end

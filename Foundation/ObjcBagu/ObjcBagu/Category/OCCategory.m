@@ -72,7 +72,7 @@
 // 先执行类的 load，再执行分类的；分类的 load 顺序由编译顺序决定，先编译的先执行。(Build Phases -> Compile Sources)
 // load 方法是通过直接找到 load_method_t 函数指针，调用的，不走 objc_msgSend，所以不会只执行分类实现
 + (void)load {
-    NSLog(@"primary load.");
+    NSLog(@"OCCategory load.");
 }
 
 /* initialize 流程 (类第一次接受消息时调用)
@@ -87,7 +87,7 @@
      objc_msgSend(cls, SEL_initialize)
  */
 + (void)initialize {
-    NSLog(@"primary initialize.");
+    NSLog(@"OCCategory initialize.");
 }
 
 /* 分类方法合并过程
@@ -168,6 +168,18 @@ static char *kAssociationKey = "kAssociationKey";
     
     NSString *value = objc_getAssociatedObject(self, kAssociationKey);
     NSLog(@"%@", value);
+}
+
+@end
+
+@implementation OCCategorySubClass
+
++ (void)load {
+    NSLog(@"OCCategorySubClass load.");
+}
+
++ (void)initialize {
+    NSLog(@"OCCategorySubClass initialize.");
 }
 
 @end

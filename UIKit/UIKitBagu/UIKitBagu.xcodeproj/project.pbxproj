@@ -61,6 +61,7 @@
 		0D84B74E2716E6C4007CB183 /* UIKitBagu */ = {
 			isa = PBXGroup;
 			children = (
+				0DB6B30328124D4B00A0A5F3 /* Renderer */,
 				0D84B74F2716E6C4007CB183 /* AppDelegate.h */,
 				0D84B7502716E6C4007CB183 /* AppDelegate.m */,
 				0D84B7522716E6C4007CB183 /* SceneDelegate.h */,
@@ -74,6 +75,13 @@
 				0D84B7612716E6CC007CB183 /* main.m */,
 			);
 			path = UIKitBagu;
+			sourceTree = "<group>";
+		};
+		0DB6B30328124D4B00A0A5F3 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Renderer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

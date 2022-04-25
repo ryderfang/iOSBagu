@@ -50,6 +50,11 @@
 //    [NSThread sleepForTimeInterval:2];
 }
 
+- (void)start {
+    [self.residentThread start];
+    dispatch_semaphore_wait(self.sem, DISPATCH_TIME_FOREVER);
+}
+
 - (void)dealloc {
     NSLog(@"dealloc");
 }

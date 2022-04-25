@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCProperty : NSObject
+@interface OCProperty : NSObject <CommonProtocol>
 
 @property (nonatomic, assign, readonly) BOOL rbIns;
-
-+ (void)run;
 
 @end
 

@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OCMethodSwizzling : NSObject
-
-+ (void)run;
+@interface OCMethodSwizzling : NSObject <CommonProtocol>
 
 @end
 

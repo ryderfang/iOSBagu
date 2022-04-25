@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OCRuntime : NSObject
-
-+ (void)run;
+// iOS runtime: https://github.com/RetVal/objc-runtime
+@interface OCRuntime : NSObject <CommonProtocol>
 
 @end
 

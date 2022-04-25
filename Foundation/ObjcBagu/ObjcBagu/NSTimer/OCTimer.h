@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCTimer : NSObject
+@interface OCTimer : NSObject <CommonProtocol>
 
-+ (void)run;
+- (void)start;
 
 @end
 
