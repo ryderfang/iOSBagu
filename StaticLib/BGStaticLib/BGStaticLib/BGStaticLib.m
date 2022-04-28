@@ -18,4 +18,8 @@
     return self;
 }
 
++ (void)hello {
+    NSLog(@"Hello from BGStaticLib.");
+}
+
 @end

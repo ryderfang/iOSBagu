@@ -1,0 +1,6 @@
+framework module Pods_UIKitBagu {
+  umbrella header "Pods-UIKitBagu-umbrella.h"
+
+  export *
+  module * { export * }
+}

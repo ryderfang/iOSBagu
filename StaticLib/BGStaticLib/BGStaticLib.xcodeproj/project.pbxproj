@@ -75,6 +75,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D5E54CA28004665008C9D17 /* Build configuration list for PBXNativeTarget "BGStaticLib" */;
 			buildPhases = (
+				B477DF10F91F20C1746B98A3 /* [CP] Check Pods Manifest.lock */,
 				0D5E54BD28004665008C9D17 /* Sources */,
 				0D5E54BE28004665008C9D17 /* Frameworks */,
 				0D5E54BF28004665008C9D17 /* CopyFiles */,
@@ -119,6 +120,32 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B477DF10F91F20C1746B98A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BGStaticLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D5E54BD28004665008C9D17 /* Sources */ = {

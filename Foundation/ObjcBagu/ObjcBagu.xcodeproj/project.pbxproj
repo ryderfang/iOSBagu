@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D01F323281ADF6D00794410 /* OCSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D01F322281ADF6D00794410 /* OCSwift.m */; };
 		0D090796271FE2E7004802BD /* OCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D090795271FE2E7004802BD /* OCRuntime.m */; };
 		0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A813D271EB9B700A42EFD /* OCMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0D444F2627C6391F00F92391 /* CommonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC8B627C6317B00868FC5 /* CommonObject.m */; };
@@ -28,6 +29,8 @@
 		0DBB448A271EE94800F9C479 /* OCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB4489271EE94800F9C479 /* OCCategory.m */; };
 		0DBB448D271EEA5C00F9C479 /* OCCategory+T1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448C271EEA5C00F9C479 /* OCCategory+T1.m */; };
 		0DBB4490271EEA6800F9C479 /* OCCategory+T2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448F271EEA6800F9C479 /* OCCategory+T2.m */; };
+		0DC8C917281814E4007498FE /* OCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8C916281814E4007498FE /* OCBlock.m */; };
+		7EDDC8C3965A7D84ED81518E /* Pods_ObjcBagu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8B872BF68CDB49C12A8D0E /* Pods_ObjcBagu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D01F321281ADF6D00794410 /* OCSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSwift.h; sourceTree = "<group>"; };
+		0D01F322281ADF6D00794410 /* OCSwift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCSwift.m; sourceTree = "<group>"; };
 		0D090794271FE2E7004802BD /* OCRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRuntime.h; sourceTree = "<group>"; };
 		0D090795271FE2E7004802BD /* OCRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRuntime.m; sourceTree = "<group>"; };
 		0D1A813C271EB9B700A42EFD /* OCMRC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMRC.h; sourceTree = "<group>"; };
@@ -87,6 +92,11 @@
 		0DBB448C271EEA5C00F9C479 /* OCCategory+T1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCCategory+T1.m"; sourceTree = "<group>"; };
 		0DBB448E271EEA6800F9C479 /* OCCategory+T2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCCategory+T2.h"; sourceTree = "<group>"; };
 		0DBB448F271EEA6800F9C479 /* OCCategory+T2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCCategory+T2.m"; sourceTree = "<group>"; };
+		0DC8C915281814E4007498FE /* OCBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBlock.h; sourceTree = "<group>"; };
+		0DC8C916281814E4007498FE /* OCBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlock.m; sourceTree = "<group>"; };
+		316DEA373116E2B9C956A1EA /* Pods-ObjcBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcBagu.release.xcconfig"; path = "Target Support Files/Pods-ObjcBagu/Pods-ObjcBagu.release.xcconfig"; sourceTree = "<group>"; };
+		3F8B872BF68CDB49C12A8D0E /* Pods_ObjcBagu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96C45C09A27AD4E155EEFE4 /* Pods-ObjcBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcBagu.debug.xcconfig"; path = "Target Support Files/Pods-ObjcBagu/Pods-ObjcBagu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDDC8C3965A7D84ED81518E /* Pods_ObjcBagu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +145,8 @@
 			children = (
 				0D84B7262716D68D007CB183 /* ObjcBagu */,
 				0D84B7252716D68D007CB183 /* Products */,
+				414D71316879C0E5E5B53C7E /* Pods */,
+				AE09C9D9029F16BCAA883302 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,6 +303,8 @@
 		0D84B73A2716D899007CB183 /* Block */ = {
 			isa = PBXGroup;
 			children = (
+				0DC8C915281814E4007498FE /* OCBlock.h */,
+				0DC8C916281814E4007498FE /* OCBlock.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -314,8 +329,28 @@
 			children = (
 				0DB6B21D28117CB400A0A5F3 /* SWTemp.swift */,
 				0DB6B21C28117CB400A0A5F3 /* ObjcBagu-Bridging-Header.h */,
+				0D01F321281ADF6D00794410 /* OCSwift.h */,
+				0D01F322281ADF6D00794410 /* OCSwift.m */,
 			);
 			path = Swift;
+			sourceTree = "<group>";
+		};
+		414D71316879C0E5E5B53C7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B96C45C09A27AD4E155EEFE4 /* Pods-ObjcBagu.debug.xcconfig */,
+				316DEA373116E2B9C956A1EA /* Pods-ObjcBagu.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		AE09C9D9029F16BCAA883302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B872BF68CDB49C12A8D0E /* Pods_ObjcBagu.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +360,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D84B72B2716D68D007CB183 /* Build configuration list for PBXNativeTarget "ObjcBagu" */;
 			buildPhases = (
+				1F53D0903201B3EC003010BE /* [CP] Check Pods Manifest.lock */,
 				0D84B7202716D68D007CB183 /* Sources */,
 				0D84B7212716D68D007CB183 /* Frameworks */,
 				0D84B7222716D68D007CB183 /* CopyFiles */,
@@ -371,12 +407,38 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F53D0903201B3EC003010BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjcBagu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D84B7202716D68D007CB183 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */,
+				0DC8C917281814E4007498FE /* OCBlock.m in Sources */,
 				0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */,
 				0D5E544428003C97008C9D17 /* OCProtocolImpl.m in Sources */,
 				0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */,
@@ -386,6 +448,7 @@
 				0D444F2627C6391F00F92391 /* CommonObject.m in Sources */,
 				0D84B7282716D68D007CB183 /* main.m in Sources */,
 				0D669A48271EC24500E191C9 /* OCMethodSwizzling.m in Sources */,
+				0D01F323281ADF6D00794410 /* OCSwift.m in Sources */,
 				0D84B7DC27181729007CB183 /* NSTimer+RRKit.m in Sources */,
 				0DB7B1302802A59B0036CD76 /* OCGCD.m in Sources */,
 				0D84B7E2271847F0007CB183 /* OCWeakProxy.m in Sources */,
@@ -516,6 +579,7 @@
 		};
 		0D84B72C2716D68D007CB183 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B96C45C09A27AD4E155EEFE4 /* Pods-ObjcBagu.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -528,6 +592,12 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.objc.bagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjcBagu/Swift/ObjcBagu-Bridging-Header.h";
@@ -538,6 +608,7 @@
 		};
 		0D84B72D2716D68D007CB183 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316DEA373116E2B9C956A1EA /* Pods-ObjcBagu.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -549,6 +620,12 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.objc.bagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";

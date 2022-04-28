@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "OCAutoReleasePool.h"
+#import "OCBlock.h"
 #import "OCCategory.h"
 #import "OCGCD.h"
 #import "OCMRC.h"
@@ -16,13 +17,13 @@
 #import "OCProperty.h"
 #import "OCProtocolImpl.h"
 #import "OCRuntime.h"
+#import "OCSwift.h"
 #import "OCTimer.h"
-// OC -> Swift
-#import "ObjcBagu-Swift.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        [OCAutoReleasePool run];
+//        [OCBlock run];
 //        [OCCategory run];
 //        [OCGCD run];
 //        [OCMRC run];
@@ -32,9 +33,8 @@ int main(int argc, const char * argv[]) {
 //        [OCProtocolImpl run];
 //        [OCRuntime run];
 //        [OCTimer run];
-        
-        SWTemp *temp = [[SWTemp alloc] init];
-        [temp hello];
+        [OCSwift run];
+
     }
     return 0;
 }

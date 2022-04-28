@@ -1,0 +1,6 @@
+framework module BGStaticLib {
+  umbrella header "BGStaticLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

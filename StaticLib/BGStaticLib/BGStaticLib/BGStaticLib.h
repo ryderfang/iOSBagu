@@ -9,4 +9,6 @@
 
 @interface BGStaticLib : NSObject
 
++ (void)hello;
+
 @end

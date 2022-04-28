@@ -1,0 +1,21 @@
+PODS:
+  - BGStaticLib (0.0.1)
+  - SwiftBagu (0.0.1)
+
+DEPENDENCIES:
+  - BGStaticLib (from `./StaticLib`)
+  - SwiftBagu (from `./Foundation/SwiftBagu`)
+
+EXTERNAL SOURCES:
+  BGStaticLib:
+    :path: "./StaticLib"
+  SwiftBagu:
+    :path: "./Foundation/SwiftBagu"
+
+SPEC CHECKSUMS:
+  BGStaticLib: d8c2df094584d9c56053a917d5cbf9eb6552daac
+  SwiftBagu: fdf41815e608b902efa266209be7ba2293f97a5b
+
+PODFILE CHECKSUM: 26757a75c03b3c0dcb2b9938d5ad0d0f981bad85
+
+COCOAPODS: 1.11.2

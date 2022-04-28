@@ -13,16 +13,7 @@ class SWTemp : NSObject {
         print("Hello, Swift!")
         
 //        self.createTimer();
-        self.testVariable();
     }
-    
-    func testVariable () {
-        var a : Int? = nil
-        if (a != nil) {
-            
-        }
-    }
-    
     
     func createTimer() {
         let timer = OCTimer();

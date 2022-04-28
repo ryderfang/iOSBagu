@@ -1,0 +1,6 @@
+framework module Pods_ObjcBagu {
+  umbrella header "Pods-ObjcBagu-umbrella.h"
+
+  export *
+  module * { export * }
+}
