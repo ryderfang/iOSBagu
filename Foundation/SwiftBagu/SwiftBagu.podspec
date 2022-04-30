@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   }
   # 源码，头文件，库文件
   spec.swift_version = '5.0'
-  spec.source_files = "SwiftBagu/*.{swift,m,mm}"
+  spec.source_files = "SwiftBagu/*.{swift,m,mm}", "SwiftBagu/*/*.{swift,m,mm}"
 
   # for framework
   # spec.vendored_frameworks = 'SwiftBagu.framework'

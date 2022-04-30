@@ -12,6 +12,8 @@
 		0D1A813E271EB9B700A42EFD /* OCMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A813D271EB9B700A42EFD /* OCMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0D444F2627C6391F00F92391 /* CommonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3DC8B627C6317B00868FC5 /* CommonObject.m */; };
 		0D5E544428003C97008C9D17 /* OCProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E544328003C97008C9D17 /* OCProtocolImpl.m */; };
+		0D6194E9281D8D5100E2AF01 /* OCNSMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6194E8281D8D5100E2AF01 /* OCNSMutableArray.m */; };
+		0D6194EC281D8D7500E2AF01 /* OCWeakPointerArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6194EB281D8D7500E2AF01 /* OCWeakPointerArray.m */; };
 		0D669A48271EC24500E191C9 /* OCMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D669A47271EC24500E191C9 /* OCMethodSwizzling.m */; };
 		0D84B7282716D68D007CB183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7272716D68D007CB183 /* main.m */; };
 		0D84B73F2716DB9B007CB183 /* OCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B73E2716DB9B007CB183 /* OCProperty.m */; };
@@ -58,6 +60,10 @@
 		0D5E53CF28002D54008C9D17 /* OCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProtocol.h; sourceTree = "<group>"; };
 		0D5E544228003C97008C9D17 /* OCProtocolImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProtocolImpl.h; sourceTree = "<group>"; };
 		0D5E544328003C97008C9D17 /* OCProtocolImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCProtocolImpl.m; sourceTree = "<group>"; };
+		0D6194E7281D8D5100E2AF01 /* OCNSMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCNSMutableArray.h; sourceTree = "<group>"; };
+		0D6194E8281D8D5100E2AF01 /* OCNSMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCNSMutableArray.m; sourceTree = "<group>"; };
+		0D6194EA281D8D7500E2AF01 /* OCWeakPointerArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCWeakPointerArray.h; sourceTree = "<group>"; };
+		0D6194EB281D8D7500E2AF01 /* OCWeakPointerArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCWeakPointerArray.m; sourceTree = "<group>"; };
 		0D669A46271EC24500E191C9 /* OCMethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodSwizzling.h; sourceTree = "<group>"; };
 		0D669A47271EC24500E191C9 /* OCMethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodSwizzling.m; sourceTree = "<group>"; };
 		0D84B7242716D68D007CB183 /* ObjcBagu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjcBagu; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +137,17 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		0D6194E2281D7FBF00E2AF01 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				0D6194E7281D8D5100E2AF01 /* OCNSMutableArray.h */,
+				0D6194E8281D8D5100E2AF01 /* OCNSMutableArray.m */,
+				0D6194EA281D8D7500E2AF01 /* OCWeakPointerArray.h */,
+				0D6194EB281D8D7500E2AF01 /* OCWeakPointerArray.m */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		0D669A45271EC21200E191C9 /* MethodSwizzling */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +184,7 @@
 				0D84B7332716D7D0007CB183 /* AutoReleasePool */,
 				0D84B73A2716D899007CB183 /* Block */,
 				0D84B72F2716D79A007CB183 /* Category */,
+				0D6194E2281D7FBF00E2AF01 /* Collections */,
 				0D3DC8B527C6317B00868FC5 /* Common */,
 				0D84B73C2716D8C1007CB183 /* HotPatch */,
 				0D84B7372716D80C007CB183 /* KVC */,
@@ -327,10 +345,10 @@
 		0DEE07F6281165B8002A08C6 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				0DB6B21D28117CB400A0A5F3 /* SWTemp.swift */,
 				0DB6B21C28117CB400A0A5F3 /* ObjcBagu-Bridging-Header.h */,
 				0D01F321281ADF6D00794410 /* OCSwift.h */,
 				0D01F322281ADF6D00794410 /* OCSwift.m */,
+				0DB6B21D28117CB400A0A5F3 /* SWTemp.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -438,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D84B8572719298D007CB183 /* OCAutoReleasePool.mm in Sources */,
+				0D6194EC281D8D7500E2AF01 /* OCWeakPointerArray.m in Sources */,
 				0DC8C917281814E4007498FE /* OCBlock.m in Sources */,
 				0D84B7E52718513F007CB183 /* OCMsgForwarding.m in Sources */,
 				0D5E544428003C97008C9D17 /* OCProtocolImpl.m in Sources */,
@@ -454,6 +473,7 @@
 				0D84B7E2271847F0007CB183 /* OCWeakProxy.m in Sources */,
 				0D84B85A2719328E007CB183 /* OCRunloop.m in Sources */,
 				0D84B76A271811AE007CB183 /* OCTimer.m in Sources */,
+				0D6194E9281D8D5100E2AF01 /* OCNSMutableArray.m in Sources */,
 				0DBB448D271EEA5C00F9C479 /* OCCategory+T1.m in Sources */,
 				0D92F0AF279021ED00DED6AE /* hello.m in Sources */,
 				0D090796271FE2E7004802BD /* OCRuntime.m in Sources */,

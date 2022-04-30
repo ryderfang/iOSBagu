@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D01F425281BB09800794410 /* SBGKWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D01F424281BB09800794410 /* SBGKWords.swift */; };
 		0D0DBB5E281AB9A60087D77E /* SwiftBagu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0DBB53281AB9A60087D77E /* SwiftBagu.framework */; };
 		0D0DBB63281AB9A60087D77E /* SwiftBaguTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0DBB62281AB9A60087D77E /* SwiftBaguTests.swift */; };
 		0D0DBB64281AB9A60087D77E /* SwiftBagu.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0DBB56281AB9A60087D77E /* SwiftBagu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D0DBB6E281AC1230087D77E /* StringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0DBB6D281AC1230087D77E /* StringFormatter.swift */; };
+		0D0DBB6E281AC1230087D77E /* SBGStringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0DBB6D281AC1230087D77E /* SBGStringFormatter.swift */; };
+		0D6194E1281D7E1E00E2AF01 /* SBGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6194E0281D7E1E00E2AF01 /* SBGTimer.swift */; };
+		0D6194E4281D803A00E2AF01 /* SBGInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6194E3281D803A00E2AF01 /* SBGInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +27,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D01F424281BB09800794410 /* SBGKWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGKWords.swift; sourceTree = "<group>"; };
 		0D0DBB53281AB9A60087D77E /* SwiftBagu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0DBB56281AB9A60087D77E /* SwiftBagu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftBagu.h; sourceTree = "<group>"; };
 		0D0DBB5D281AB9A60087D77E /* SwiftBaguTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBaguTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0DBB62281AB9A60087D77E /* SwiftBaguTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBaguTests.swift; sourceTree = "<group>"; };
-		0D0DBB6D281AC1230087D77E /* StringFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatter.swift; sourceTree = "<group>"; };
+		0D0DBB6D281AC1230087D77E /* SBGStringFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGStringFormatter.swift; sourceTree = "<group>"; };
+		0D6194E0281D7E1E00E2AF01 /* SBGTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGTimer.swift; sourceTree = "<group>"; };
+		0D6194E3281D803A00E2AF01 /* SBGInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D01F423281BB07900794410 /* Keywords */ = {
+			isa = PBXGroup;
+			children = (
+				0D01F424281BB09800794410 /* SBGKWords.swift */,
+			);
+			path = Keywords;
+			sourceTree = "<group>";
+		};
 		0D0DBB49281AB9A60087D77E = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				0D0DBB56281AB9A60087D77E /* SwiftBagu.h */,
-				0D0DBB6D281AC1230087D77E /* StringFormatter.swift */,
+				0D6194E3281D803A00E2AF01 /* SBGInterface.swift */,
+				0D6194DF281D7DBE00E2AF01 /* String */,
+				0D6194DE281D7D9800E2AF01 /* Timer */,
+				0D01F423281BB07900794410 /* Keywords */,
 			);
 			path = SwiftBagu;
 			sourceTree = "<group>";
@@ -83,6 +100,22 @@
 				0D0DBB62281AB9A60087D77E /* SwiftBaguTests.swift */,
 			);
 			path = SwiftBaguTests;
+			sourceTree = "<group>";
+		};
+		0D6194DE281D7D9800E2AF01 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				0D6194E0281D7E1E00E2AF01 /* SBGTimer.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		0D6194DF281D7DBE00E2AF01 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				0D0DBB6D281AC1230087D77E /* SBGStringFormatter.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D0DBB6E281AC1230087D77E /* StringFormatter.swift in Sources */,
+				0D0DBB6E281AC1230087D77E /* SBGStringFormatter.swift in Sources */,
+				0D01F425281BB09800794410 /* SBGKWords.swift in Sources */,
+				0D6194E4281D803A00E2AF01 /* SBGInterface.swift in Sources */,
+				0D6194E1281D7E1E00E2AF01 /* SBGTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,8 +23,8 @@
     [temp hello];
 
     // call swift lib
-    StringFormatter *formatter = [StringFormatter new];
-    [formatter hello];
+//    StringFormatter *formatter = [StringFormatter new];
+//    [formatter hello];
 }
 
 @end

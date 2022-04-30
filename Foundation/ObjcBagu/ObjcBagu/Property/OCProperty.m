@@ -9,8 +9,32 @@
 #import "OCProperty.h"
 
 @interface PFoo : NSObject
+@property (nonatomic, strong) id delegate;
 @end
 @implementation PFoo
+
+//- (void)setDelegate:(id)delegate {
+//    NSLog(@"Super PFoo delegate");
+//    _delegate = delegate;
+//}
+
+@end
+
+@interface PBar : PFoo
+// Auto property synthesis will not synthesize property 'delegate'; it will be implemented by its superclass, use @dynamic to acknowledge intention
+@property (nonatomic, strong) id delegate;
+@end
+
+@implementation PBar
+
+// 只是为了消除 warning
+@dynamic delegate;
+
+- (void)testDelegate {
+    self.delegate = [NSObject new];
+    NSLog(@"%@", self.delegate);
+}
+
 @end
 
 
@@ -67,33 +91,44 @@
     // 3. 涉及的数据结构有 SideTable / weak_table_t / weak_entry_t
 }
 
+/*
+ * 当源是 mutable 时，使用 copy 更安全；
+ * 当源是 immutable 时，两者一样，copy 也不会创建新对象。
+ * 所以，NSString 作为属性，使用 [copy] 万无一失。
+ */
 - (void)testCopy {
     // I. NSMutableString -> NSString
-    NSMutableString *sourceStr = [[NSMutableString alloc] initWithFormat:@"Hello, %@", @"World"];
+    NSMutableString *sourceStr = [[NSMutableString alloc] initWithFormat:@"You're in %@", [NSLocale currentLocale].countryCode];
     // NSString 作为属性时，使用 copy，在这一步时会自动调用 [sourceStr copy] 方法，深拷贝一次，避免源改变后，属性随之改变
     self.strCopy = sourceStr;
     self.strStrong = sourceStr;
-    // source: 0x105b079d0, copy: 0x105c150e0, strong: 0x105b079d0
+    // source: 0x108e17fa0, copy: 0x108e18030, strong: 0x108e17fa0
     NSLog(@"source: %p, copy: %p, strong: %p", sourceStr, self.strCopy, self.strStrong);
     // 修改源
-    sourceStr = [NSMutableString stringWithString:@"Hoooo"];
-    // source: Hoooo, copy: Hello, World, strong: Hello, World
+    NSUInteger index = sourceStr.length - 2;
+    [sourceStr replaceCharactersInRange:NSMakeRange(index, 2) withString:@"US"];
+    // 同样的，修改属性，也会影响源
+//    [(NSMutableString *)self.strStrong replaceCharactersInRange:NSMakeRange(index, 2) withString:@"US"];
+    // source: You're in US, copy: You're in CN, strong: You're in US
+    // 可以看出来，strong 修饰的属性被修改了
     NSLog(@"source: %@, copy: %@, strong: %@", sourceStr, self.strCopy, self.strStrong);
+    
+    NSLog(@"===========================");
     
 #pragma mark 这种情况 copy 和 strong 是一样的
     // II. NSString -> NSString
-    NSString *srcStr = @"Hello, World";
+    NSString *srcStr = [[NSString alloc] initWithFormat:@"You're in %@", [NSLocale currentLocale].countryCode];
     self.strCopy = srcStr;
     self.strStrong = srcStr;
-    // source: 0x105a04260, copy: 0x100004170, strong: 0x100004170 地址一样!
-    NSLog(@"source: %p, copy: %p, strong: %p", sourceStr, self.strCopy, self.strStrong);
+    // source: 0x10f216b50, copy: 0x10f216b50, strong: 0x10f216b50 地址一样!
+    NSLog(@"source: %p, copy: %p, strong: %p", srcStr, self.strCopy, self.strStrong);
     // 修改源
     srcStr = @"Woooo";
-    // source: 0x105a04260, copy: 0x100004170, strong: 0x100004170
+    // source: 0x10000c670, copy: 0x10f216b50, strong: 0x10f216b50
     // 也可以避免被修改，因为 NSString 重新赋值，相当于构建了一个新对象 (source 地址变化)
-    NSLog(@"source: %p, copy: %p, strong: %p", sourceStr, self.strCopy, self.strStrong);
+    NSLog(@"source: %p, copy: %p, strong: %p", srcStr, self.strCopy, self.strStrong);
     // source: Hoooo, copy: Hello, World, strong: Hello, World
-    NSLog(@"source: %@, copy: %@, strong: %@", sourceStr, self.strCopy, self.strStrong);
+    NSLog(@"source: %@, copy: %@, strong: %@", srcStr, self.strCopy, self.strStrong);
 }
 
 @dynamic dyBool;
@@ -102,11 +137,13 @@
     // 如果不自己实现 set 方法，会抛 NSInvalidArgumentException 异常
     self.dyBool = YES;
     // 如果不自己实现 get 方法，会抛 NSInvalidArgumentException 异常
-    NSLog(@"get:: %d", self.dyBool);
+//    NSLog(@"get:: %d", self.dyBool);
+    
+    PBar *bar = [PBar new];
+    [bar testDelegate];
 }
 
 - (void)setDyBool:(BOOL)dyBool {
-    NSLog(@"%d", dyBool);
     _dyBool = dyBool;
 }
 

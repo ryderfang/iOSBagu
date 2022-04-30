@@ -16,7 +16,10 @@
     "ryder": "fray9166@gmail.com"
   },
   "swift_versions": "5.0",
-  "source_files": "SwiftBagu/*.{swift,m,mm}",
+  "source_files": [
+    "SwiftBagu/*.{swift,m,mm}",
+    "SwiftBagu/*/*.{swift,m,mm}"
+  ],
   "user_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },

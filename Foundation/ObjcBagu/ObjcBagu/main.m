@@ -29,11 +29,11 @@ int main(int argc, const char * argv[]) {
 //        [OCMRC run];
 //        [OCMethodSwizzling run];
 //        [OCMsgForwarding run];
-//        [OCProperty run];
+        [OCProperty run];
 //        [OCProtocolImpl run];
 //        [OCRuntime run];
 //        [OCTimer run];
-        [OCSwift run];
+//        [OCSwift run];
 
     }
     return 0;
