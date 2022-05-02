@@ -14,3 +14,6 @@ FOUNDATION_EXPORT double SwiftBaguVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftBaguVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SwiftBagu/PublicHeader.h>
+
+#import <SwiftBagu/MyCFunction.h>
+#import <SwiftBagu/MyOCFunction.h>

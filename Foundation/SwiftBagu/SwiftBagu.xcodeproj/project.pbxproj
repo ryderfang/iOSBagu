@@ -14,6 +14,11 @@
 		0D0DBB6E281AC1230087D77E /* SBGStringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0DBB6D281AC1230087D77E /* SBGStringFormatter.swift */; };
 		0D6194E1281D7E1E00E2AF01 /* SBGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6194E0281D7E1E00E2AF01 /* SBGTimer.swift */; };
 		0D6194E4281D803A00E2AF01 /* SBGInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6194E3281D803A00E2AF01 /* SBGInterface.swift */; };
+		0D6194F3281EC67100E2AF01 /* MyCFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D6194F1281EC67100E2AF01 /* MyCFunction.c */; };
+		0D6194F4281EC67100E2AF01 /* MyCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6194F2281EC67100E2AF01 /* MyCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D619500281EC76D00E2AF01 /* MyOCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6194FE281EC76D00E2AF01 /* MyOCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D619501281EC76D00E2AF01 /* MyOCFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6194FF281EC76D00E2AF01 /* MyOCFunction.m */; };
+		0D619505281FF43300E2AF01 /* SBGClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D619504281FF43300E2AF01 /* SBGClosures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,11 @@
 		0D0DBB6D281AC1230087D77E /* SBGStringFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGStringFormatter.swift; sourceTree = "<group>"; };
 		0D6194E0281D7E1E00E2AF01 /* SBGTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGTimer.swift; sourceTree = "<group>"; };
 		0D6194E3281D803A00E2AF01 /* SBGInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGInterface.swift; sourceTree = "<group>"; };
+		0D6194F1281EC67100E2AF01 /* MyCFunction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MyCFunction.c; sourceTree = "<group>"; };
+		0D6194F2281EC67100E2AF01 /* MyCFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCFunction.h; sourceTree = "<group>"; };
+		0D6194FE281EC76D00E2AF01 /* MyOCFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOCFunction.h; sourceTree = "<group>"; };
+		0D6194FF281EC76D00E2AF01 /* MyOCFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOCFunction.m; sourceTree = "<group>"; };
+		0D619504281FF43300E2AF01 /* SBGClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGClosures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,8 @@
 		0D01F423281BB07900794410 /* Keywords */ = {
 			isa = PBXGroup;
 			children = (
+				0D6194F1281EC67100E2AF01 /* MyCFunction.c */,
+				0D6194F2281EC67100E2AF01 /* MyCFunction.h */,
 				0D01F424281BB09800794410 /* SBGKWords.swift */,
 			);
 			path = Keywords;
@@ -87,9 +99,11 @@
 			children = (
 				0D0DBB56281AB9A60087D77E /* SwiftBagu.h */,
 				0D6194E3281D803A00E2AF01 /* SBGInterface.swift */,
+				0D619503281FF41D00E2AF01 /* Closures */,
+				0D01F423281BB07900794410 /* Keywords */,
+				0D6194FD281EC75400E2AF01 /* ObjC */,
 				0D6194DF281D7DBE00E2AF01 /* String */,
 				0D6194DE281D7D9800E2AF01 /* Timer */,
-				0D01F423281BB07900794410 /* Keywords */,
 			);
 			path = SwiftBagu;
 			sourceTree = "<group>";
@@ -118,6 +132,23 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		0D6194FD281EC75400E2AF01 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				0D6194FE281EC76D00E2AF01 /* MyOCFunction.h */,
+				0D6194FF281EC76D00E2AF01 /* MyOCFunction.m */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		0D619503281FF41D00E2AF01 /* Closures */ = {
+			isa = PBXGroup;
+			children = (
+				0D619504281FF43300E2AF01 /* SBGClosures.swift */,
+			);
+			path = Closures;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -125,6 +156,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D619500281EC76D00E2AF01 /* MyOCFunction.h in Headers */,
+				0D6194F4281EC67100E2AF01 /* MyCFunction.h in Headers */,
 				0D0DBB64281AB9A60087D77E /* SwiftBagu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +213,7 @@
 				TargetAttributes = {
 					0D0DBB52281AB9A60087D77E = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					0D0DBB5C281AB9A60087D77E = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -228,9 +262,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0DBB6E281AC1230087D77E /* SBGStringFormatter.swift in Sources */,
+				0D619501281EC76D00E2AF01 /* MyOCFunction.m in Sources */,
 				0D01F425281BB09800794410 /* SBGKWords.swift in Sources */,
+				0D619505281FF43300E2AF01 /* SBGClosures.swift in Sources */,
 				0D6194E4281D803A00E2AF01 /* SBGInterface.swift in Sources */,
 				0D6194E1281D7E1E00E2AF01 /* SBGTimer.swift in Sources */,
+				0D6194F3281EC67100E2AF01 /* MyCFunction.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +413,7 @@
 		0D0DBB68281AB9A60087D77E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -396,6 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,6 +443,7 @@
 		0D0DBB69281AB9A60087D77E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

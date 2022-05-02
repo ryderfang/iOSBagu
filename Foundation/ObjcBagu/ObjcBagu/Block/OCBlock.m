@@ -8,12 +8,43 @@
 
 #import "OCBlock.h"
 
+typedef double (^Multiplier)(double, double);
+
+@interface OCBlock ()
+
+@property (nonatomic, copy) Multiplier multiply;
+@property (nonatomic, copy) void (^voidBlock)(void);
+
+@end
+
 @implementation OCBlock
 
 + (void)run {
     OCBlock *temp = [OCBlock new];
     //[temp testBlock];
     [temp testBlockAssign];
+}
+
+- (void)testSyntax {
+    // 局部变量
+    __unused double (^multiply1)(double, double) = ^double(double a, double b) {
+        return a * b;
+    };
+    __unused double (^multiply2)(double, double) = ^(double a, double b) {
+        return a * b;
+    };
+    __unused void (^voidBlock)(void) = ^{
+        
+    };
+    
+    // 参数调用
+    [self someMethodCallBlock:^(double a, double b) {
+        return a * b;
+    }];
+}
+
+- (void)someMethodCallBlock:(double (^_Nonnull)(double, double))multiply {
+    
 }
 
 - (void)testBlock {

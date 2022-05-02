@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "SwiftBagu.h"
+#import "MyCFunction.h"
+#import "MyOCFunction.h"
 
 FOUNDATION_EXPORT double SwiftBaguVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftBaguVersionString[];

@@ -12,8 +12,18 @@ open class SBGInterface {
         
     }
     
-    public func testKeyWords() {
+    final public func testKeyWords() {
         let foo =  SBGKWords()
+        foo.defaultValue = 2.0
         foo.hello()
+    }
+    
+    public func testClosures() {
+        let foo = SBGClosures()
+        foo.hello()
+    }
+    
+    open func testTimer() {
+        
     }
 }

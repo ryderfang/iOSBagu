@@ -14,6 +14,9 @@ class SWTemp : NSObject {
         print("Hello, Swift!")
         
 //        self.createTimer();
+        
+        let interface = SBGInterface()
+        interface.testClosures()
     }
     
     func createTimer() {
@@ -22,3 +25,18 @@ class SWTemp : NSObject {
     }
 }
 
+class MyInterface : SBGInterface {
+    // Instance method overrides a 'final' instance method
+//    override func testKeyWords() {
+//        
+//    }
+    
+    override func testTimer() {
+        super.testTimer()
+    }
+}
+
+// Cannot inherit from non-open class 'SBGStringFormatter' outside of its defining module
+//class MyStringFormatter: SBGStringFormatter {
+//
+//}

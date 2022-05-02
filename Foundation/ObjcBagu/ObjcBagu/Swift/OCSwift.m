@@ -16,7 +16,7 @@
 
 + (void)run {
     // call oc lib
-    [BGStaticLib hello];
+//    [BGStaticLib hello];
     
     // call swift method
     SWTemp *temp = [[SWTemp alloc] init];
