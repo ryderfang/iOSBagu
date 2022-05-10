@@ -17,6 +17,7 @@ target 'ObjcBagu' do
 end
 
 target 'UIKitBagu' do
+    platform :ios, '10.0'
     project 'UIKit/UIKitBagu/UIKitBagu.xcodeproj'
 end
 

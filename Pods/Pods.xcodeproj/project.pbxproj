@@ -11,21 +11,21 @@
 		07B33EB6368B2AD8D8326F1B261216E1 /* MyOCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD6F8DD62171B91AC643DAE1DD2C7C1 /* MyOCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C0D1A0CD4371A277502E84F999DC73F /* MyCFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7F7B1DEF4497DAD4898463DE4FF38A /* MyCFunction.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2F68F6DFCD35B26A58DE6ECA6A4583FD /* MyCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8E79FB07B6C5FF793E8F92C6E774F8 /* MyCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FC3DB47477A92CB10A1D352EE1DC693 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		2FC9196770269442B7F77137FF5D9485 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		2FC9196770269442B7F77137FF5D9485 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */; };
 		3214B354F28437E8D71AC1B8E8A74B38 /* SwiftBagu.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D871AD065C5890BB244B282EE69F14D /* SwiftBagu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FCFEF1766489341E434630D9904DC7F /* Pods-UIKitBagu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E3F1D9B8603F4149537DEEA987D81F /* Pods-UIKitBagu-dummy.m */; };
 		471E37B193A53EA8933F2A13475527BE /* SBGInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57271C4046490DE24263D902AA8C45A /* SBGInterface.swift */; };
 		53597C4B4742777EAEE0F9C114A5F94D /* BGProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 946F25305ED253A0C946CD8357B8BBDB /* BGProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57FA6F7E3E01B21408775BFDB0CDFBD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96B6F02A66345DED9C856D1BD504B40 /* Foundation.framework */; };
 		6821F8EF08EAFBEEEFDD96000605BF07 /* Pods-UIKitBagu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0D47256865D6E70F8E23A236CF7646 /* Pods-UIKitBagu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AAAE89672985C48F520D66A01541135 /* BGStaticLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 60911D7D5863ED463B6EA08DD6BB6A65 /* BGStaticLib.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		75DA29DFB7E80580B3E59AE32A697871 /* BGStaticLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6844B6E264F4798E9483F6EC9525B7 /* BGStaticLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8072B43BFB35844D41997668293295DA /* Pods-ObjcBagu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6CAC47099D71B287EFE6D345E67B4E /* Pods-ObjcBagu-dummy.m */; };
 		8E557727AA64D863C340CFAC5D647DD9 /* SwiftBagu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6CE64E5224D265F9C47C2C4803F709 /* SwiftBagu-dummy.m */; };
 		93A0B6116EBB46C9BC4532A84B9C2D66 /* SBGStringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B5C87B70D74400AF7995E9AEE6CFF /* SBGStringFormatter.swift */; };
-		9617531BB0A93ECB9406FD0998178E01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		9617531BB0A93ECB9406FD0998178E01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */; };
 		9A5A3F83A8AA933DCB425B92E2FEDF3A /* BGStaticLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE7ADB500028085CD0D9347CAF390EB /* BGStaticLib-dummy.m */; };
-		B53691DA1BBA71842F33A4FC5A29E39D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		B53691DA1BBA71842F33A4FC5A29E39D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */; };
 		BBC601BFE8BD99BBB824A5D0E15CCD24 /* SwiftBagu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8139DEA477E08BB0A96EC016F20696FA /* SwiftBagu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F4FB3D0CEF23646B2F9B57CA8ED127 /* SBGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09815B57F3DC8DC7E6F8BB519486AD3C /* SBGTimer.swift */; };
 		CE444E1A7CD86876A7AFD0D5B71D61E4 /* BGStaticLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F86068ABFB79F10F0AE9019A198224A /* BGStaticLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,6 +75,7 @@
 		6475CD15B4D5EA7CDA595F95C1810C99 /* SwiftBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBagu.debug.xcconfig; sourceTree = "<group>"; };
 		6B1EB504D92D8AFBAF1E57190C556989 /* Pods-ObjcBagu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjcBagu-umbrella.h"; sourceTree = "<group>"; };
 		6BC73C379B19269C799A3DE1E8088EAF /* BGStaticLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGStaticLib.release.xcconfig; sourceTree = "<group>"; };
+		70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		77955098E8555C7E6CA6CB113D023982 /* Pods-UIKitBagu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIKitBagu-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8139DEA477E08BB0A96EC016F20696FA /* SwiftBagu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftBagu-umbrella.h"; sourceTree = "<group>"; };
 		868248946AF00DAF71969D158854AA97 /* BGStaticLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BGStaticLib.modulemap; sourceTree = "<group>"; };
@@ -88,11 +89,11 @@
 		A7F4860EBF039A6F614B2F9349E48339 /* SwiftBagu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftBagu-Info.plist"; sourceTree = "<group>"; };
 		AD7EBD12A1DDD83CCDB3E67E6AC703BD /* SwiftBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBagu.release.xcconfig; sourceTree = "<group>"; };
 		BA3CE797AC7B8678494F0DE5AF6D8426 /* SBGClosures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGClosures.swift; sourceTree = "<group>"; };
-		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		CFD58A06E9CE83109EF57AF5763FE573 /* BGStaticLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BGStaticLib-Info.plist"; sourceTree = "<group>"; };
 		CFE7ADB500028085CD0D9347CAF390EB /* BGStaticLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BGStaticLib-dummy.m"; sourceTree = "<group>"; };
 		D3EAC9CEC9149AF71085E769013A681E /* BGStaticLib */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BGStaticLib; path = BGStaticLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93B5C87B70D74400AF7995E9AEE6CFF /* SBGStringFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGStringFormatter.swift; sourceTree = "<group>"; };
+		D96B6F02A66345DED9C856D1BD504B40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DAA54EE623027B09EE0396BC7A3C44F4 /* BGStaticLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGStaticLib-prefix.pch"; sourceTree = "<group>"; };
 		DD6844B6E264F4798E9483F6EC9525B7 /* BGStaticLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGStaticLib-umbrella.h"; sourceTree = "<group>"; };
 		E3E3F1D9B8603F4149537DEEA987D81F /* Pods-UIKitBagu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIKitBagu-dummy.m"; sourceTree = "<group>"; };
@@ -114,14 +115,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FC96D3B58A9FC308E0D9E7A0BD83561 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2FC3DB47477A92CB10A1D352EE1DC693 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9FF4C4EBE6C8A7736A510C8D70431FD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,9 +131,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F50D2BF9B1F406E625CEFDDCBD453BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FA6F7E3E01B21408775BFDB0CDFBD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16C2DDD7ACBF27A6F430D467E2E6AAD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58665E417B4C06E15BC1B19044862D2E /* iOS */,
+				CE99DF0ABA5FB7E00AC2861D6C3EE997 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18529D19721A26E34EFFB081E72B59A1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,14 @@
 				19FEA343F377EB65BE1C8CB4C11BBE65 /* SwiftBagu */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		58665E417B4C06E15BC1B19044862D2E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D96B6F02A66345DED9C856D1BD504B40 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		62A042408BB03AEC93E0A3E60E4B8E3E /* String */ = {
@@ -278,12 +296,20 @@
 			path = "Target Support Files/Pods-ObjcBagu";
 			sourceTree = "<group>";
 		};
+		CE99DF0ABA5FB7E00AC2861D6C3EE997 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				9F04A126DAEC45A4304B5287E4885710 /* Development Pods */,
-				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
+				16C2DDD7ACBF27A6F430D467E2E6AAD4 /* Frameworks */,
 				5817D037C2256A66E519B1AA70A64B4A /* Products */,
 				ABD0ECDEB83D31932D5C011147771FDF /* Targets Support Files */,
 			);
@@ -335,22 +361,6 @@
 			);
 			name = "Support Files";
 			path = "../../Pods/Target Support Files/SwiftBagu";
-			sourceTree = "<group>";
-		};
-		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */,
-			);
-			name = "OS X";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,7 +468,7 @@
 			buildPhases = (
 				7BECA682CCBF447FFAB04F16A0FA937D /* Headers */,
 				9E21DC6B5FC9B50B5E3A94F919B593B4 /* Sources */,
-				5FC96D3B58A9FC308E0D9E7A0BD83561 /* Frameworks */,
+				F50D2BF9B1F406E625CEFDDCBD453BD6 /* Frameworks */,
 				C96523325C80FD6798361DA21AF78737 /* Resources */,
 			);
 			buildRules = (
@@ -699,16 +709,15 @@
 			};
 			name = Release;
 		};
-		84546B24EA637517AA68153B82730B49 /* Debug */ = {
+		2A778BCDEDD7ABF099F9227FFCFDFF18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EED366EA2D0F735BABA9BE3963DB12D1 /* Pods-UIKitBagu.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -716,89 +725,24 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8595DAAADE1DA176102F3A02A5CC21A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
@@ -839,40 +783,66 @@
 			};
 			name = Debug;
 		};
-		ACD1171F41D660628565FE77B5F55F6A /* Release */ = {
+		9CC619172F91086ECC293FBCB59F078A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 025F02D66814ECA59A1D47B21DAE0030 /* Pods-UIKitBagu.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
@@ -948,7 +918,45 @@
 			};
 			name = Debug;
 		};
-		F6AAAB79F323E7F367268DCB73F4D128 /* Release */ = {
+		F18ED0F87206D7A2029E13FC166D2B3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 025F02D66814ECA59A1D47B21DAE0030 /* Pods-UIKitBagu.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F881F1CA05314CE652DFF172C028A5B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -983,13 +991,16 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -998,17 +1009,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1016,8 +1029,8 @@
 		158D1C696BDF9245563A93C565EF3BDF /* Build configuration list for PBXNativeTarget "Pods-UIKitBagu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84546B24EA637517AA68153B82730B49 /* Debug */,
-				ACD1171F41D660628565FE77B5F55F6A /* Release */,
+				2A778BCDEDD7ABF099F9227FFCFDFF18 /* Debug */,
+				F18ED0F87206D7A2029E13FC166D2B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1025,8 +1038,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8595DAAADE1DA176102F3A02A5CC21A0 /* Debug */,
-				F6AAAB79F323E7F367268DCB73F4D128 /* Release */,
+				F881F1CA05314CE652DFF172C028A5B0 /* Debug */,
+				9CC619172F91086ECC293FBCB59F078A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
