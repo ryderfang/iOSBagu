@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OCMethodSwizzling : NSObject <CommonProtocol>
+@interface OCMethodSwizzlingSuper : NSObject
+
+- (void)sp_instanceMethod;
+
+@end
+
+@interface OCMethodSwizzling : OCMethodSwizzlingSuper <CommonProtocol>
 
 @end
 

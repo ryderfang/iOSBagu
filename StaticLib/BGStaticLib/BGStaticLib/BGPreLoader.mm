@@ -29,7 +29,7 @@ __attribute((used, section("__DATA," _PRELD_SECNAME))) static my_data_t _dt##_k 
     _i,\
 };\
 
-__attribute((used, section("__DATA,_my_pre_data"))) static const char *quote = "Practice makes perfect.";
+//__attribute((used, section("__DATA,_my_pre_data"))) static const char *quote = "Practice makes perfect.";
 
 _PRELD_DATA(kkk, vvv, 1)
 _PRELD_DATA(eee, aaa, 2)
@@ -66,7 +66,7 @@ static void dyld_func(const struct mach_header *header, intptr_t slide) {
     my_data_t *data = (my_data_t *)memory;
     for (int i = 0; i < n; i++) {
         my_data_t tmp = data[i];
-        std::cout << tmp.key << ": " << tmp.val << "(" << tmp.idx << ")" << std::endl;
+//        std::cout << tmp.key << ": " << tmp.val << "(" << tmp.idx << ")" << std::endl;
     }
 }
 
