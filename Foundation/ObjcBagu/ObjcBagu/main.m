@@ -33,8 +33,8 @@ int main(int argc, const char * argv[]) {
 //        [OCProtocolImpl run];
 //        [OCRuntime run];
 //        [OCTimer run];
-        [OCSwift run];
-
+//        [OCSwift run];
+        NSLog(@"[timestamp] %.0lf", [NSDate date].timeIntervalSince1970);
     }
     return 0;
 }

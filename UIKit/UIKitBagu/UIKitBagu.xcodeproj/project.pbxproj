@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D371C33283CC8EF00E842B3 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D371C32283CC8EF00E842B3 /* DemoViewController.m */; };
 		0D84B7512716E6C4007CB183 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7502716E6C4007CB183 /* AppDelegate.m */; };
 		0D84B7542716E6C4007CB183 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7532716E6C4007CB183 /* SceneDelegate.m */; };
 		0D84B7572716E6C4007CB183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7562716E6C4007CB183 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D371C31283CC8EF00E842B3 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		0D371C32283CC8EF00E842B3 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		0D84B74C2716E6C4007CB183 /* UIKitBagu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitBagu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D84B74F2716E6C4007CB183 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D84B7502716E6C4007CB183 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				0D84B75D2716E6CC007CB183 /* LaunchScreen.storyboard */,
 				0D84B7602716E6CC007CB183 /* Info.plist */,
 				0D84B7612716E6CC007CB183 /* main.m */,
+				0D371C31283CC8EF00E842B3 /* DemoViewController.h */,
+				0D371C32283CC8EF00E842B3 /* DemoViewController.m */,
 			);
 			path = UIKitBagu;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				0D84B7572716E6C4007CB183 /* ViewController.m in Sources */,
 				0D84B7512716E6C4007CB183 /* AppDelegate.m in Sources */,
 				0D84B7622716E6CC007CB183 /* main.m in Sources */,
+				0D371C33283CC8EF00E842B3 /* DemoViewController.m in Sources */,
 				0D84B7542716E6C4007CB183 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

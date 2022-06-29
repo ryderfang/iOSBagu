@@ -8,12 +8,20 @@
 
 #import "OCGCD.h"
 
+@interface OCGCD()
+
+@property (nonatomic, strong) NSString *myStr;
+
+@end
+
 @implementation OCGCD
 
 + (void)run {
 //    dispatch_get_current_queue();
-    OCGCD *temp = [OCGCD new];
-    [temp testPerformSelector];
+    OCGCD *gcd = [OCGCD new];
+//    [gcd testPerformSelector];
+//    [gcd testAsyncManyTimes];
+//    [gcd testOrder];
 }
 
 - (void)testPerformSelector {
@@ -24,12 +32,13 @@
         {
             // 子线程方法不会执行，因为子线程 runloop 默认没有唤醒 (定时器的实现依赖 runloop)
 //            [self performSelector:@selector(_log:) withObject:sem afterDelay:0];
+            // 可以手动唤醒，这样就能执行 log 了
+//            [[NSRunLoop currentRunLoop] run];
+
             // gcd 的定时器没有这个问题，依赖 dispatch_source_set_timer 实现
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), queue, ^{
                 [self _log:sem];
             });
-            // 可以手动唤醒，这样就能执行 log 了
-//            [[NSRunLoop currentRunLoop] run];
         }
         {
             // 这个不依赖定时器，就可以调用
@@ -45,6 +54,32 @@
     NSLog(@"_log");
     // 不手动唤醒 runloop，将永远 wait
     dispatch_semaphore_signal(sem);
+}
+
+- (void)testAsyncManyTimes {
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    
+    dispatch_async(queue, ^{
+        for (int i = 0; i < 100000000; i++) {
+//            self.myStr = [NSString stringWithFormat:@"%d_test", i];
+            self.myStr = [NSString stringWithFormat:@"%d", i];
+        }
+    });
+}
+
+- (void)testOrder {
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    // 1 2 3
+    dispatch_async(queue, ^{
+        NSLog(@"1");
+    });
+    dispatch_sync(queue, ^{
+        sleep(1);
+        NSLog(@"2");
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"3");
+    });
 }
 
 @end

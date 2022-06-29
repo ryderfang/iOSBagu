@@ -23,6 +23,8 @@
 @property (nonatomic, strong) dispatch_semaphore_t sem;
 @property (nonatomic, strong) NSThread *residentThread;
 
+@property (nonatomic, weak) NSTimer *realWeakTimer;
+
 @property (nonatomic, strong) NSTimer *strongTimer;
 @property (nonatomic, strong) NSTimer *weakTimer1;
 @property (nonatomic, strong) NSTimer *weakTimer2;
@@ -36,8 +38,21 @@
     if (self = [super init]) {
         _sem = dispatch_semaphore_create(0);
         _residentThread = [[NSThread alloc] initWithTarget:self selector:@selector(startThread) object:nil];
+        
+//        _realWeakTimer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(fire) userInfo:nil repeats:YES];
     }
     return self;
+}
+
+- (void)fire:(NSTimer *)timer {
+    NSLog(@"_realWeakTimer tick");
+    static int tickCount = 0;
+    tickCount++;
+    if (tickCount == 3) {
+        [self.realWeakTimer invalidate];
+        self.realWeakTimer = nil;
+        dispatch_semaphore_signal(self.sem);
+    }
 }
 
 + (void)run {
@@ -63,8 +78,11 @@
     [[NSThread currentThread] setName:@"xx"];
     NSRunLoop *rl = [NSRunLoop currentRunLoop];
     // 存在 source/timer 时，runloop 才不会退出
-//    [rl addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+    [rl addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+    
+    [self createRealWeakTimer];
     [self createStrongTimer];
+    
     // NSRunLoopCommonModes 是 (NSEventTrackingRunLoopMode | NSDefaultRunLoopMode) 模式
     // 在 scrollView 滚动时，runloop 自动切换到 NSEventTrackingRunLoopMode 模式，导致 timer 失效，使用 NSRunLoopCommonModes 解决这个问题
     [rl addTimer:self.strongTimer forMode:NSRunLoopCommonModes];
@@ -81,6 +99,12 @@
 //    self.weakTimer2 = nil;
 //    [self.weakTimer3 invalidate];
 //    self.weakTimer3 = nil;
+}
+
+- (void)createRealWeakTimer {
+    NSTimer *timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:1] interval:1 target:self selector:@selector(fire:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    _realWeakTimer = timer;
 }
 
 - (void)createStrongTimer {

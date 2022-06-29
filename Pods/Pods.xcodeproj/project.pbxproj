@@ -7,111 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051EFF5FC535AF6E23E8A8D9AF5D88B9 /* MyOCFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 137AB7AB21634E632A9F68D6F781F378 /* MyOCFunction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		07B33EB6368B2AD8D8326F1B261216E1 /* MyOCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD6F8DD62171B91AC643DAE1DD2C7C1 /* MyOCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C0D1A0CD4371A277502E84F999DC73F /* MyCFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7F7B1DEF4497DAD4898463DE4FF38A /* MyCFunction.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2F68F6DFCD35B26A58DE6ECA6A4583FD /* MyCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8E79FB07B6C5FF793E8F92C6E774F8 /* MyCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04FF37A7AB87B6455E3D65BE0E5DAE8B /* BGStaticLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 40152DA8F030AF9E6F47EF3C70F75996 /* BGStaticLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		051EFF5FC535AF6E23E8A8D9AF5D88B9 /* MyOCFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8227F9DF3A097AD074BEEFCD555878 /* MyOCFunction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		07B33EB6368B2AD8D8326F1B261216E1 /* MyOCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF9D5D77CCE017DA42CCBB386B8F61F /* MyOCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D10649172A369274B4A73CB268B8F00 /* BGStaticLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB07A45DC0FE0A0AEE5F27F86BE574 /* BGStaticLib.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2C0D1A0CD4371A277502E84F999DC73F /* MyCFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F5F7CC618493E0C94BA701C7622E8 /* MyCFunction.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2F68F6DFCD35B26A58DE6ECA6A4583FD /* MyCFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30F20456EA31CF950D8491030C3E71 /* MyCFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FC9196770269442B7F77137FF5D9485 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */; };
-		3214B354F28437E8D71AC1B8E8A74B38 /* SwiftBagu.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D871AD065C5890BB244B282EE69F14D /* SwiftBagu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3214B354F28437E8D71AC1B8E8A74B38 /* SwiftBagu.h in Headers */ = {isa = PBXBuildFile; fileRef = 062329BB4C12B3B7E015D9FD67BB220E /* SwiftBagu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC7BF17F14927DEB3D72059090A93E9 /* BGPreLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65726C7CA71DE0CF54D46103CE64D2D6 /* BGPreLoader.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3FCFEF1766489341E434630D9904DC7F /* Pods-UIKitBagu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E3F1D9B8603F4149537DEEA987D81F /* Pods-UIKitBagu-dummy.m */; };
-		471E37B193A53EA8933F2A13475527BE /* SBGInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57271C4046490DE24263D902AA8C45A /* SBGInterface.swift */; };
-		53597C4B4742777EAEE0F9C114A5F94D /* BGProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 946F25305ED253A0C946CD8357B8BBDB /* BGProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471E37B193A53EA8933F2A13475527BE /* SBGInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBCB384DF128C952325130E458094E2 /* SBGInterface.swift */; };
 		57FA6F7E3E01B21408775BFDB0CDFBD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96B6F02A66345DED9C856D1BD504B40 /* Foundation.framework */; };
 		6821F8EF08EAFBEEEFDD96000605BF07 /* Pods-UIKitBagu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0D47256865D6E70F8E23A236CF7646 /* Pods-UIKitBagu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AAAE89672985C48F520D66A01541135 /* BGStaticLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 60911D7D5863ED463B6EA08DD6BB6A65 /* BGStaticLib.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		75DA29DFB7E80580B3E59AE32A697871 /* BGStaticLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6844B6E264F4798E9483F6EC9525B7 /* BGStaticLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8072B43BFB35844D41997668293295DA /* Pods-ObjcBagu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6CAC47099D71B287EFE6D345E67B4E /* Pods-ObjcBagu-dummy.m */; };
-		8E557727AA64D863C340CFAC5D647DD9 /* SwiftBagu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6CE64E5224D265F9C47C2C4803F709 /* SwiftBagu-dummy.m */; };
-		93A0B6116EBB46C9BC4532A84B9C2D66 /* SBGStringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B5C87B70D74400AF7995E9AEE6CFF /* SBGStringFormatter.swift */; };
+		84CE2BB758D413D468C88070DEA98B13 /* BGPreLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 52E2F703DDA6F068780A50330D3A920B /* BGPreLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E557727AA64D863C340CFAC5D647DD9 /* SwiftBagu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5188F7F6730A3398E61C53B8588B1 /* SwiftBagu-dummy.m */; };
+		8EF158F422A40653DE422A0DA3D76A36 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */; };
+		934D184DA91E93BF8DFDEF42796317BA /* BGStaticLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC6896D766186141012AA7177D1ADB9F /* BGStaticLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A0B6116EBB46C9BC4532A84B9C2D66 /* SBGStringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D19C94024E334CAAB571E62759988 /* SBGStringFormatter.swift */; };
 		9617531BB0A93ECB9406FD0998178E01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */; };
-		9A5A3F83A8AA933DCB425B92E2FEDF3A /* BGStaticLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE7ADB500028085CD0D9347CAF390EB /* BGStaticLib-dummy.m */; };
-		B53691DA1BBA71842F33A4FC5A29E39D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */; };
-		BBC601BFE8BD99BBB824A5D0E15CCD24 /* SwiftBagu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8139DEA477E08BB0A96EC016F20696FA /* SwiftBagu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7F4FB3D0CEF23646B2F9B57CA8ED127 /* SBGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09815B57F3DC8DC7E6F8BB519486AD3C /* SBGTimer.swift */; };
-		CE444E1A7CD86876A7AFD0D5B71D61E4 /* BGStaticLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F86068ABFB79F10F0AE9019A198224A /* BGStaticLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC465420EF7AD8C7B34880BDAFFC239E /* SBGKWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2BC96FC61616C3AB3FD4D956CD057 /* SBGKWords.swift */; };
+		BBC601BFE8BD99BBB824A5D0E15CCD24 /* SwiftBagu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BDC3834B47E720F8EAC8A04DFE82BD /* SwiftBagu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F4FB3D0CEF23646B2F9B57CA8ED127 /* SBGTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02026271C422A40171678EECA569A29 /* SBGTimer.swift */; };
+		DC465420EF7AD8C7B34880BDAFFC239E /* SBGKWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEDF8DF427026F9D85FA70B77C3194 /* SBGKWords.swift */; };
+		DF96AE8E21ADECF0EF365D28D504EFE9 /* BGProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A78F234AAFDC2EEF0CAB2422B26452DB /* BGProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9684C64DD05852DFCB3E43ADAC0C2C3 /* BGStaticLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F4FD28542EED13D7336E075724A85 /* BGStaticLib-dummy.m */; };
 		F454E09352CC9CC0094194708C985456 /* Pods-ObjcBagu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B1EB504D92D8AFBAF1E57190C556989 /* Pods-ObjcBagu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFB6DFB25820D616FFD103BA678585C2 /* SBGClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3CE797AC7B8678494F0DE5AF6D8426 /* SBGClosures.swift */; };
+		FFB6DFB25820D616FFD103BA678585C2 /* SBGClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66E3A0C439291D9F201393C7529126 /* SBGClosures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E738B2C00A1524BB32293F732DD9894 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 03F59EE15EB9A9CAFE75A2A75C6A32DA;
-			remoteInfo = BGStaticLib;
-		};
-		6FA114029DFE675A6D9C0978BFFFD95F /* PBXContainerItemProxy */ = {
+		AA2DF863B9B7ACB41F5E64243FC83518 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A5D205ACCA0A1CAA30C605F59E235C14;
 			remoteInfo = SwiftBagu;
 		};
+		F259BE28016D956DEC81E426A2E54FD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F59EE15EB9A9CAFE75A2A75C6A32DA;
+			remoteInfo = BGStaticLib;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		025F02D66814ECA59A1D47B21DAE0030 /* Pods-UIKitBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitBagu.release.xcconfig"; sourceTree = "<group>"; };
-		04B8EB3CDC864F7BFBBB5B691B8A0FE6 /* BGStaticLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGStaticLib.debug.xcconfig; sourceTree = "<group>"; };
+		05E8007F213EF395B82A76D5A11E1DD6 /* BGStaticLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BGStaticLib-Info.plist"; sourceTree = "<group>"; };
+		062329BB4C12B3B7E015D9FD67BB220E /* SwiftBagu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftBagu.h; path = SwiftBagu/SwiftBagu.h; sourceTree = "<group>"; };
 		063758F275045618138D41C4571338B3 /* Pods-ObjcBagu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ObjcBagu.modulemap"; sourceTree = "<group>"; };
-		09815B57F3DC8DC7E6F8BB519486AD3C /* SBGTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGTimer.swift; sourceTree = "<group>"; };
 		0A0D47256865D6E70F8E23A236CF7646 /* Pods-UIKitBagu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIKitBagu-umbrella.h"; sourceTree = "<group>"; };
+		0FD5188F7F6730A3398E61C53B8588B1 /* SwiftBagu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftBagu-dummy.m"; sourceTree = "<group>"; };
 		12D653A78FDB84E7972E81BD5E148AEB /* Pods-UIKitBagu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UIKitBagu"; path = Pods_UIKitBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		137AB7AB21634E632A9F68D6F781F378 /* MyOCFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MyOCFunction.m; sourceTree = "<group>"; };
 		1517028630E92B40981BBE10184A7BBB /* Pods-ObjcBagu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ObjcBagu"; path = Pods_ObjcBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		158A1B9616F4AB649E9364E33864277C /* Pods-ObjcBagu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjcBagu-Info.plist"; sourceTree = "<group>"; };
 		16DE051520405D8B7F2FD86D21031E52 /* Pods-UIKitBagu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKitBagu-Info.plist"; sourceTree = "<group>"; };
 		19FEA343F377EB65BE1C8CB4C11BBE65 /* SwiftBagu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftBagu; path = SwiftBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FD6F8DD62171B91AC643DAE1DD2C7C1 /* MyOCFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MyOCFunction.h; sourceTree = "<group>"; };
-		26981B694F827A9DE3EBFCF2C8230D78 /* SwiftBagu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftBagu-prefix.pch"; sourceTree = "<group>"; };
+		1C30F20456EA31CF950D8491030C3E71 /* MyCFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MyCFunction.h; sourceTree = "<group>"; };
+		1C8F5F7CC618493E0C94BA701C7622E8 /* MyCFunction.c */ = {isa = PBXFileReference; includeInIndex = 1; path = MyCFunction.c; sourceTree = "<group>"; };
 		2CCE420B08E263BEB892CF5354CF5E2B /* Pods-UIKitBagu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKitBagu-acknowledgements.plist"; sourceTree = "<group>"; };
-		2D871AD065C5890BB244B282EE69F14D /* SwiftBagu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftBagu.h; path = SwiftBagu/SwiftBagu.h; sourceTree = "<group>"; };
-		3C6CE64E5224D265F9C47C2C4803F709 /* SwiftBagu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftBagu-dummy.m"; sourceTree = "<group>"; };
-		5C7F7B1DEF4497DAD4898463DE4FF38A /* MyCFunction.c */ = {isa = PBXFileReference; includeInIndex = 1; path = MyCFunction.c; sourceTree = "<group>"; };
+		2EEB07A45DC0FE0A0AEE5F27F86BE574 /* BGStaticLib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BGStaticLib.m; path = BGStaticLib/BGStaticLib/BGStaticLib.m; sourceTree = "<group>"; };
+		310D19C94024E334CAAB571E62759988 /* SBGStringFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGStringFormatter.swift; sourceTree = "<group>"; };
+		328FAFA3ADCF201E278BC0BC13FE4FFC /* SwiftBagu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftBagu-prefix.pch"; sourceTree = "<group>"; };
+		40152DA8F030AF9E6F47EF3C70F75996 /* BGStaticLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BGStaticLib.h; path = BGStaticLib/BGStaticLib/BGStaticLib.h; sourceTree = "<group>"; };
+		45AEDF8DF427026F9D85FA70B77C3194 /* SBGKWords.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGKWords.swift; sourceTree = "<group>"; };
+		4A307122F16D0F4B7A1D8A452E60BDF6 /* BGStaticLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BGStaticLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		52E2F703DDA6F068780A50330D3A920B /* BGPreLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BGPreLoader.h; path = BGStaticLib/BGStaticLib/BGPreLoader.h; sourceTree = "<group>"; };
 		5F04CF07D90083CC5DD20228A6BA3BDA /* Pods-ObjcBagu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjcBagu-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5F86068ABFB79F10F0AE9019A198224A /* BGStaticLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BGStaticLib.h; path = BGStaticLib/BGStaticLib/BGStaticLib.h; sourceTree = "<group>"; };
-		60911D7D5863ED463B6EA08DD6BB6A65 /* BGStaticLib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BGStaticLib.m; path = BGStaticLib/BGStaticLib/BGStaticLib.m; sourceTree = "<group>"; };
-		6475CD15B4D5EA7CDA595F95C1810C99 /* SwiftBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBagu.debug.xcconfig; sourceTree = "<group>"; };
+		5FC9A24A8188ED94DC776EA31080A941 /* SwiftBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBagu.release.xcconfig; sourceTree = "<group>"; };
+		64CC6DBFB259EAAAEF638151F4D45ADA /* SwiftBagu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftBagu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		65726C7CA71DE0CF54D46103CE64D2D6 /* BGPreLoader.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = BGPreLoader.mm; path = BGStaticLib/BGStaticLib/BGPreLoader.mm; sourceTree = "<group>"; };
+		66BDC3834B47E720F8EAC8A04DFE82BD /* SwiftBagu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftBagu-umbrella.h"; sourceTree = "<group>"; };
 		6B1EB504D92D8AFBAF1E57190C556989 /* Pods-ObjcBagu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ObjcBagu-umbrella.h"; sourceTree = "<group>"; };
-		6BC73C379B19269C799A3DE1E8088EAF /* BGStaticLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGStaticLib.release.xcconfig; sourceTree = "<group>"; };
+		6BBCB384DF128C952325130E458094E2 /* SBGInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBGInterface.swift; path = SwiftBagu/SBGInterface.swift; sourceTree = "<group>"; };
 		70E59D9D8EF41291B0C13BC330FA3126 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		77955098E8555C7E6CA6CB113D023982 /* Pods-UIKitBagu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIKitBagu-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8139DEA477E08BB0A96EC016F20696FA /* SwiftBagu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftBagu-umbrella.h"; sourceTree = "<group>"; };
-		868248946AF00DAF71969D158854AA97 /* BGStaticLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BGStaticLib.modulemap; sourceTree = "<group>"; };
-		89AFBCC8E5A18490886DFF59D9FA833C /* SwiftBagu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftBagu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8AE2BC96FC61616C3AB3FD4D956CD057 /* SBGKWords.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGKWords.swift; sourceTree = "<group>"; };
+		7D66E3A0C439291D9F201393C7529126 /* SBGClosures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGClosures.swift; sourceTree = "<group>"; };
+		7EA9892689171F769C507ABE775BD46E /* SwiftBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBagu.debug.xcconfig; sourceTree = "<group>"; };
+		8692CD80A617FFE87F2502E11BACC64E /* SwiftBagu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftBagu.modulemap; sourceTree = "<group>"; };
+		8BCCF56D51581C05D9BF3620696C389C /* BGStaticLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGStaticLib-prefix.pch"; sourceTree = "<group>"; };
 		8FA4717BD03D388C997825EE330632EA /* Pods-ObjcBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcBagu.release.xcconfig"; sourceTree = "<group>"; };
-		946F25305ED253A0C946CD8357B8BBDB /* BGProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BGProtocol.h; path = BGStaticLib/BGStaticLib/BGProtocol.h; sourceTree = "<group>"; };
+		914F4FD28542EED13D7336E075724A85 /* BGStaticLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BGStaticLib-dummy.m"; sourceTree = "<group>"; };
+		9338CB5DF93887009355C0B0E0FCF22E /* BGStaticLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGStaticLib.release.xcconfig; sourceTree = "<group>"; };
+		9A40C711FC654415E132D8B338D92466 /* SwiftBagu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftBagu-Info.plist"; sourceTree = "<group>"; };
+		9D8227F9DF3A097AD074BEEFCD555878 /* MyOCFunction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MyOCFunction.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DD0D651397F1AE944DFFAA248378BF3 /* SwiftBagu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftBagu.modulemap; sourceTree = "<group>"; };
-		9F3D6C0D96B77299E4D2117C6CFD9A21 /* BGStaticLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BGStaticLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7F4860EBF039A6F614B2F9349E48339 /* SwiftBagu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftBagu-Info.plist"; sourceTree = "<group>"; };
-		AD7EBD12A1DDD83CCDB3E67E6AC703BD /* SwiftBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftBagu.release.xcconfig; sourceTree = "<group>"; };
-		BA3CE797AC7B8678494F0DE5AF6D8426 /* SBGClosures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGClosures.swift; sourceTree = "<group>"; };
-		CFD58A06E9CE83109EF57AF5763FE573 /* BGStaticLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BGStaticLib-Info.plist"; sourceTree = "<group>"; };
-		CFE7ADB500028085CD0D9347CAF390EB /* BGStaticLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BGStaticLib-dummy.m"; sourceTree = "<group>"; };
+		A78F234AAFDC2EEF0CAB2422B26452DB /* BGProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BGProtocol.h; path = BGStaticLib/BGStaticLib/BGProtocol.h; sourceTree = "<group>"; };
+		B1416418CFB973CB7237C5F3221C86BA /* BGStaticLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGStaticLib.debug.xcconfig; sourceTree = "<group>"; };
+		BCF9D5D77CCE017DA42CCBB386B8F61F /* MyOCFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MyOCFunction.h; sourceTree = "<group>"; };
+		BFE24453C05A3CBFED3114561EA9CDC7 /* BGStaticLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BGStaticLib.modulemap; sourceTree = "<group>"; };
+		CC6896D766186141012AA7177D1ADB9F /* BGStaticLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGStaticLib-umbrella.h"; sourceTree = "<group>"; };
 		D3EAC9CEC9149AF71085E769013A681E /* BGStaticLib */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BGStaticLib; path = BGStaticLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D93B5C87B70D74400AF7995E9AEE6CFF /* SBGStringFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGStringFormatter.swift; sourceTree = "<group>"; };
 		D96B6F02A66345DED9C856D1BD504B40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DAA54EE623027B09EE0396BC7A3C44F4 /* BGStaticLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGStaticLib-prefix.pch"; sourceTree = "<group>"; };
-		DD6844B6E264F4798E9483F6EC9525B7 /* BGStaticLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGStaticLib-umbrella.h"; sourceTree = "<group>"; };
+		E02026271C422A40171678EECA569A29 /* SBGTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SBGTimer.swift; sourceTree = "<group>"; };
 		E3E3F1D9B8603F4149537DEEA987D81F /* Pods-UIKitBagu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIKitBagu-dummy.m"; sourceTree = "<group>"; };
-		E57271C4046490DE24263D902AA8C45A /* SBGInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBGInterface.swift; path = SwiftBagu/SBGInterface.swift; sourceTree = "<group>"; };
 		E80644CCF7DAC87D3070B114E243392F /* Pods-ObjcBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjcBagu.debug.xcconfig"; sourceTree = "<group>"; };
 		E94131F6442883DEADE6BEE484A3487E /* Pods-UIKitBagu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UIKitBagu.modulemap"; sourceTree = "<group>"; };
-		EB8E79FB07B6C5FF793E8F92C6E774F8 /* MyCFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MyCFunction.h; sourceTree = "<group>"; };
 		EED366EA2D0F735BABA9BE3963DB12D1 /* Pods-UIKitBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKitBagu.debug.xcconfig"; sourceTree = "<group>"; };
 		FD6CAC47099D71B287EFE6D345E67B4E /* Pods-ObjcBagu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjcBagu-dummy.m"; sourceTree = "<group>"; };
 		FD72CF1AC12BBDA2FC15BA9BFC6A6F38 /* Pods-ObjcBagu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjcBagu-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		479F92A013CFF490F29580849D6E0E47 /* Frameworks */ = {
+		8428811FF0CB3C88D8E9CA34056D3FDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B53691DA1BBA71842F33A4FC5A29E39D /* Cocoa.framework in Frameworks */,
+				8EF158F422A40653DE422A0DA3D76A36 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,41 +155,62 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		18529D19721A26E34EFFB081E72B59A1 /* Pod */ = {
+		1EA5D455DC3F13169F0DF532B08141D7 /* Keywords */ = {
 			isa = PBXGroup;
 			children = (
-				89AFBCC8E5A18490886DFF59D9FA833C /* SwiftBagu.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		30C0CD65BCF7BA25B814BA41B52130A6 /* Keywords */ = {
-			isa = PBXGroup;
-			children = (
-				5C7F7B1DEF4497DAD4898463DE4FF38A /* MyCFunction.c */,
-				EB8E79FB07B6C5FF793E8F92C6E774F8 /* MyCFunction.h */,
-				8AE2BC96FC61616C3AB3FD4D956CD057 /* SBGKWords.swift */,
+				1C8F5F7CC618493E0C94BA701C7622E8 /* MyCFunction.c */,
+				1C30F20456EA31CF950D8491030C3E71 /* MyCFunction.h */,
+				45AEDF8DF427026F9D85FA70B77C3194 /* SBGKWords.swift */,
 			);
 			name = Keywords;
 			path = SwiftBagu/Keywords;
 			sourceTree = "<group>";
 		};
-		389A180342FF2797ACD3AE4F7C44E100 /* Pod */ = {
+		2A542B6EB44030B494D44573A694DB87 /* BGStaticLib */ = {
 			isa = PBXGroup;
 			children = (
-				9F3D6C0D96B77299E4D2117C6CFD9A21 /* BGStaticLib.podspec */,
+				52E2F703DDA6F068780A50330D3A920B /* BGPreLoader.h */,
+				65726C7CA71DE0CF54D46103CE64D2D6 /* BGPreLoader.mm */,
+				A78F234AAFDC2EEF0CAB2422B26452DB /* BGProtocol.h */,
+				40152DA8F030AF9E6F47EF3C70F75996 /* BGStaticLib.h */,
+				2EEB07A45DC0FE0A0AEE5F27F86BE574 /* BGStaticLib.m */,
+				2D95B98FC1FBA302E68160F5E5F13406 /* Pod */,
+				2D1D3266B525FB2CBDA153AF6B2C55EA /* Support Files */,
+			);
+			name = BGStaticLib;
+			path = ../StaticLib;
+			sourceTree = "<group>";
+		};
+		2D1D3266B525FB2CBDA153AF6B2C55EA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFE24453C05A3CBFED3114561EA9CDC7 /* BGStaticLib.modulemap */,
+				914F4FD28542EED13D7336E075724A85 /* BGStaticLib-dummy.m */,
+				05E8007F213EF395B82A76D5A11E1DD6 /* BGStaticLib-Info.plist */,
+				8BCCF56D51581C05D9BF3620696C389C /* BGStaticLib-prefix.pch */,
+				CC6896D766186141012AA7177D1ADB9F /* BGStaticLib-umbrella.h */,
+				B1416418CFB973CB7237C5F3221C86BA /* BGStaticLib.debug.xcconfig */,
+				9338CB5DF93887009355C0B0E0FCF22E /* BGStaticLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/BGStaticLib";
+			sourceTree = "<group>";
+		};
+		2D95B98FC1FBA302E68160F5E5F13406 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4A307122F16D0F4B7A1D8A452E60BDF6 /* BGStaticLib.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		5312A91FD10A0E58AA13C1215122E20B /* ObjC */ = {
+		45FC31DE8346CA64F0D712C364E447B2 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				1FD6F8DD62171B91AC643DAE1DD2C7C1 /* MyOCFunction.h */,
-				137AB7AB21634E632A9F68D6F781F378 /* MyOCFunction.m */,
+				E02026271C422A40171678EECA569A29 /* SBGTimer.swift */,
 			);
-			name = ObjC;
-			path = SwiftBagu/ObjC;
+			name = Timer;
+			path = SwiftBagu/Timer;
 			sourceTree = "<group>";
 		};
 		5817D037C2256A66E519B1AA70A64B4A /* Products */ = {
@@ -207,68 +232,40 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		62A042408BB03AEC93E0A3E60E4B8E3E /* String */ = {
+		71B54976078B220570A27331894A7A66 /* String */ = {
 			isa = PBXGroup;
 			children = (
-				D93B5C87B70D74400AF7995E9AEE6CFF /* SBGStringFormatter.swift */,
+				310D19C94024E334CAAB571E62759988 /* SBGStringFormatter.swift */,
 			);
 			name = String;
 			path = SwiftBagu/String;
 			sourceTree = "<group>";
 		};
-		853C497BA7097F2D3337DC6AEFD698E9 /* Support Files */ = {
+		7CAF24E5C2DCB115F9A86EC5197E3C93 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				868248946AF00DAF71969D158854AA97 /* BGStaticLib.modulemap */,
-				CFE7ADB500028085CD0D9347CAF390EB /* BGStaticLib-dummy.m */,
-				CFD58A06E9CE83109EF57AF5763FE573 /* BGStaticLib-Info.plist */,
-				DAA54EE623027B09EE0396BC7A3C44F4 /* BGStaticLib-prefix.pch */,
-				DD6844B6E264F4798E9483F6EC9525B7 /* BGStaticLib-umbrella.h */,
-				04B8EB3CDC864F7BFBBB5B691B8A0FE6 /* BGStaticLib.debug.xcconfig */,
-				6BC73C379B19269C799A3DE1E8088EAF /* BGStaticLib.release.xcconfig */,
+				64CC6DBFB259EAAAEF638151F4D45ADA /* SwiftBagu.podspec */,
 			);
-			name = "Support Files";
-			path = "../Pods/Target Support Files/BGStaticLib";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		918C8861B4851F4FDFDCE72CCA8B3158 /* Timer */ = {
+		8D53B7C5BF8B41931A3E85167A9FEEA4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				09815B57F3DC8DC7E6F8BB519486AD3C /* SBGTimer.swift */,
-			);
-			name = Timer;
-			path = SwiftBagu/Timer;
-			sourceTree = "<group>";
-		};
-		9AAB02261F8E81F68C162819759F7D05 /* Closures */ = {
-			isa = PBXGroup;
-			children = (
-				BA3CE797AC7B8678494F0DE5AF6D8426 /* SBGClosures.swift */,
-			);
-			name = Closures;
-			path = SwiftBagu/Closures;
-			sourceTree = "<group>";
-		};
-		9F04A126DAEC45A4304B5287E4885710 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9F98E35EEB318B6F958BB5366944BF75 /* BGStaticLib */,
-				D1E944AF96FFE4AF5857575AF1695338 /* SwiftBagu */,
+				2A542B6EB44030B494D44573A694DB87 /* BGStaticLib */,
+				CFD14A2C5965A58D5D838809826443E3 /* SwiftBagu */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		9F98E35EEB318B6F958BB5366944BF75 /* BGStaticLib */ = {
+		ABCB171B701FE40A41020ECBBB68A7D1 /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				946F25305ED253A0C946CD8357B8BBDB /* BGProtocol.h */,
-				5F86068ABFB79F10F0AE9019A198224A /* BGStaticLib.h */,
-				60911D7D5863ED463B6EA08DD6BB6A65 /* BGStaticLib.m */,
-				389A180342FF2797ACD3AE4F7C44E100 /* Pod */,
-				853C497BA7097F2D3337DC6AEFD698E9 /* Support Files */,
+				BCF9D5D77CCE017DA42CCBB386B8F61F /* MyOCFunction.h */,
+				9D8227F9DF3A097AD074BEEFCD555878 /* MyOCFunction.m */,
 			);
-			name = BGStaticLib;
-			path = ../StaticLib;
+			name = ObjC;
+			path = SwiftBagu/ObjC;
 			sourceTree = "<group>";
 		};
 		ABD0ECDEB83D31932D5C011147771FDF /* Targets Support Files */ = {
@@ -296,6 +293,15 @@
 			path = "Target Support Files/Pods-ObjcBagu";
 			sourceTree = "<group>";
 		};
+		C31416C2E22ADD65D9B50CA71848089A /* Closures */ = {
+			isa = PBXGroup;
+			children = (
+				7D66E3A0C439291D9F201393C7529126 /* SBGClosures.swift */,
+			);
+			name = Closures;
+			path = SwiftBagu/Closures;
+			sourceTree = "<group>";
+		};
 		CE99DF0ABA5FB7E00AC2861D6C3EE997 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,25 +314,25 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9F04A126DAEC45A4304B5287E4885710 /* Development Pods */,
+				8D53B7C5BF8B41931A3E85167A9FEEA4 /* Development Pods */,
 				16C2DDD7ACBF27A6F430D467E2E6AAD4 /* Frameworks */,
 				5817D037C2256A66E519B1AA70A64B4A /* Products */,
 				ABD0ECDEB83D31932D5C011147771FDF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D1E944AF96FFE4AF5857575AF1695338 /* SwiftBagu */ = {
+		CFD14A2C5965A58D5D838809826443E3 /* SwiftBagu */ = {
 			isa = PBXGroup;
 			children = (
-				E57271C4046490DE24263D902AA8C45A /* SBGInterface.swift */,
-				2D871AD065C5890BB244B282EE69F14D /* SwiftBagu.h */,
-				9AAB02261F8E81F68C162819759F7D05 /* Closures */,
-				30C0CD65BCF7BA25B814BA41B52130A6 /* Keywords */,
-				5312A91FD10A0E58AA13C1215122E20B /* ObjC */,
-				18529D19721A26E34EFFB081E72B59A1 /* Pod */,
-				62A042408BB03AEC93E0A3E60E4B8E3E /* String */,
-				DBE115F32C29AF85000EAB85E499FE69 /* Support Files */,
-				918C8861B4851F4FDFDCE72CCA8B3158 /* Timer */,
+				6BBCB384DF128C952325130E458094E2 /* SBGInterface.swift */,
+				062329BB4C12B3B7E015D9FD67BB220E /* SwiftBagu.h */,
+				C31416C2E22ADD65D9B50CA71848089A /* Closures */,
+				1EA5D455DC3F13169F0DF532B08141D7 /* Keywords */,
+				ABCB171B701FE40A41020ECBBB68A7D1 /* ObjC */,
+				7CAF24E5C2DCB115F9A86EC5197E3C93 /* Pod */,
+				71B54976078B220570A27331894A7A66 /* String */,
+				E95C52888EDFE589D88C8DAC78F127D2 /* Support Files */,
+				45FC31DE8346CA64F0D712C364E447B2 /* Timer */,
 			);
 			name = SwiftBagu;
 			path = ../Foundation/SwiftBagu;
@@ -348,16 +354,16 @@
 			path = "Target Support Files/Pods-UIKitBagu";
 			sourceTree = "<group>";
 		};
-		DBE115F32C29AF85000EAB85E499FE69 /* Support Files */ = {
+		E95C52888EDFE589D88C8DAC78F127D2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9DD0D651397F1AE944DFFAA248378BF3 /* SwiftBagu.modulemap */,
-				3C6CE64E5224D265F9C47C2C4803F709 /* SwiftBagu-dummy.m */,
-				A7F4860EBF039A6F614B2F9349E48339 /* SwiftBagu-Info.plist */,
-				26981B694F827A9DE3EBFCF2C8230D78 /* SwiftBagu-prefix.pch */,
-				8139DEA477E08BB0A96EC016F20696FA /* SwiftBagu-umbrella.h */,
-				6475CD15B4D5EA7CDA595F95C1810C99 /* SwiftBagu.debug.xcconfig */,
-				AD7EBD12A1DDD83CCDB3E67E6AC703BD /* SwiftBagu.release.xcconfig */,
+				8692CD80A617FFE87F2502E11BACC64E /* SwiftBagu.modulemap */,
+				0FD5188F7F6730A3398E61C53B8588B1 /* SwiftBagu-dummy.m */,
+				9A40C711FC654415E132D8B338D92466 /* SwiftBagu-Info.plist */,
+				328FAFA3ADCF201E278BC0BC13FE4FFC /* SwiftBagu-prefix.pch */,
+				66BDC3834B47E720F8EAC8A04DFE82BD /* SwiftBagu-umbrella.h */,
+				7EA9892689171F769C507ABE775BD46E /* SwiftBagu.debug.xcconfig */,
+				5FC9A24A8188ED94DC776EA31080A941 /* SwiftBagu.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../../Pods/Target Support Files/SwiftBagu";
@@ -366,6 +372,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		792C93610DAD2D1491EA03DDA6173AE1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CE2BB758D413D468C88070DEA98B13 /* BGPreLoader.h in Headers */,
+				DF96AE8E21ADECF0EF365D28D504EFE9 /* BGProtocol.h in Headers */,
+				04FF37A7AB87B6455E3D65BE0E5DAE8B /* BGStaticLib.h in Headers */,
+				934D184DA91E93BF8DFDEF42796317BA /* BGStaticLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BECA682CCBF447FFAB04F16A0FA937D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,27 +410,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B918C84BF44D183B19837D2B065175BA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53597C4B4742777EAEE0F9C114A5F94D /* BGProtocol.h in Headers */,
-				CE444E1A7CD86876A7AFD0D5B71D61E4 /* BGStaticLib.h in Headers */,
-				75DA29DFB7E80580B3E59AE32A697871 /* BGStaticLib-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		03F59EE15EB9A9CAFE75A2A75C6A32DA /* BGStaticLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4E351F563BC139BBBDAADEE6A52E518 /* Build configuration list for PBXNativeTarget "BGStaticLib" */;
+			buildConfigurationList = 60DAA20AF2AAD62C5571372CD5191135 /* Build configuration list for PBXNativeTarget "BGStaticLib" */;
 			buildPhases = (
-				B918C84BF44D183B19837D2B065175BA /* Headers */,
-				AEBC6B3AC4456025FB7D565DF9B574AC /* Sources */,
-				479F92A013CFF490F29580849D6E0E47 /* Frameworks */,
-				47D299769EDEE06F4470D911A56517DE /* Resources */,
+				792C93610DAD2D1491EA03DDA6173AE1 /* Headers */,
+				2B7F54265607BF4C854BF264E5C530D4 /* Sources */,
+				8428811FF0CB3C88D8E9CA34056D3FDA /* Frameworks */,
+				865233B60ABF8F7F3ED816207C3DD7D6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -436,8 +443,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				AAFEE5893F77F01D9731EF3F87230221 /* PBXTargetDependency */,
-				2F62CD3A34E129C2E27DB64F8D869921 /* PBXTargetDependency */,
+				FC78FE400B7C72735E4DC0CDCDADEA2C /* PBXTargetDependency */,
+				D0EA8DE9E8B4FC49294FC69612AE3C42 /* PBXTargetDependency */,
 			);
 			name = "Pods-ObjcBagu";
 			productName = Pods_ObjcBagu;
@@ -518,14 +525,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47D299769EDEE06F4470D911A56517DE /* Resources */ = {
+		60A03370BD98C3891E6596222BC18AAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60A03370BD98C3891E6596222BC18AAF /* Resources */ = {
+		865233B60ABF8F7F3ED816207C3DD7D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -542,6 +549,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2B7F54265607BF4C854BF264E5C530D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC7BF17F14927DEB3D72059090A93E9 /* BGPreLoader.mm in Sources */,
+				0D10649172A369274B4A73CB268B8F00 /* BGStaticLib.m in Sources */,
+				E9684C64DD05852DFCB3E43ADAC0C2C3 /* BGStaticLib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49405D576D08FAD45A22EF045E6BB6AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,29 +590,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEBC6B3AC4456025FB7D565DF9B574AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6AAAE89672985C48F520D66A01541135 /* BGStaticLib.m in Sources */,
-				9A5A3F83A8AA933DCB425B92E2FEDF3A /* BGStaticLib-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F62CD3A34E129C2E27DB64F8D869921 /* PBXTargetDependency */ = {
+		D0EA8DE9E8B4FC49294FC69612AE3C42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftBagu;
 			target = A5D205ACCA0A1CAA30C605F59E235C14 /* SwiftBagu */;
-			targetProxy = 6FA114029DFE675A6D9C0978BFFFD95F /* PBXContainerItemProxy */;
+			targetProxy = AA2DF863B9B7ACB41F5E64243FC83518 /* PBXContainerItemProxy */;
 		};
-		AAFEE5893F77F01D9731EF3F87230221 /* PBXTargetDependency */ = {
+		FC78FE400B7C72735E4DC0CDCDADEA2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BGStaticLib;
 			target = 03F59EE15EB9A9CAFE75A2A75C6A32DA /* BGStaticLib */;
-			targetProxy = 2E738B2C00A1524BB32293F732DD9894 /* PBXContainerItemProxy */;
+			targetProxy = F259BE28016D956DEC81E426A2E54FD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -637,9 +645,9 @@
 			};
 			name = Release;
 		};
-		0F134CCAB19996F14B58E59A938C6A18 /* Debug */ = {
+		1035A5EF09347A1760D84FC50833BDBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04B8EB3CDC864F7BFBBB5B691B8A0FE6 /* BGStaticLib.debug.xcconfig */;
+			baseConfigurationReference = B1416418CFB973CB7237C5F3221C86BA /* BGStaticLib.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -672,42 +680,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		12CD05A67A5C085AED1AA84C93FE3D44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BC73C379B19269C799A3DE1E8088EAF /* BGStaticLib.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BGStaticLib/BGStaticLib-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BGStaticLib/BGStaticLib-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/BGStaticLib/BGStaticLib.modulemap";
-				PRODUCT_MODULE_NAME = BGStaticLib;
-				PRODUCT_NAME = BGStaticLib;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		2A778BCDEDD7ABF099F9227FFCFDFF18 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -745,6 +717,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		3525A99CB2D7F81E5F9756B0EA3A6E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9338CB5DF93887009355C0B0E0FCF22E /* BGStaticLib.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BGStaticLib/BGStaticLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BGStaticLib/BGStaticLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/BGStaticLib/BGStaticLib.modulemap";
+				PRODUCT_MODULE_NAME = BGStaticLib;
+				PRODUCT_NAME = BGStaticLib;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		97AD5988DB2F9D9A86AE8F821790F63A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -848,7 +856,7 @@
 		};
 		CBB8D32ABB78E95D2885361441E98C77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD7EBD12A1DDD83CCDB3E67E6AC703BD /* SwiftBagu.release.xcconfig */;
+			baseConfigurationReference = 5FC9A24A8188ED94DC776EA31080A941 /* SwiftBagu.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -884,7 +892,7 @@
 		};
 		E4C2CDCBA81A4546F688840E2383ECE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6475CD15B4D5EA7CDA595F95C1810C99 /* SwiftBagu.debug.xcconfig */;
+			baseConfigurationReference = 7EA9892689171F769C507ABE775BD46E /* SwiftBagu.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1044,6 +1052,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		60DAA20AF2AAD62C5571372CD5191135 /* Build configuration list for PBXNativeTarget "BGStaticLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1035A5EF09347A1760D84FC50833BDBE /* Debug */,
+				3525A99CB2D7F81E5F9756B0EA3A6E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8A6308EF10BDBC2B0E9C0FE6BC1AABC1 /* Build configuration list for PBXNativeTarget "Pods-ObjcBagu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1058,15 +1075,6 @@
 			buildConfigurations = (
 				E4C2CDCBA81A4546F688840E2383ECE2 /* Debug */,
 				CBB8D32ABB78E95D2885361441E98C77 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B4E351F563BC139BBBDAADEE6A52E518 /* Build configuration list for PBXNativeTarget "BGStaticLib" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0F134CCAB19996F14B58E59A938C6A18 /* Debug */,
-				12CD05A67A5C085AED1AA84C93FE3D44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

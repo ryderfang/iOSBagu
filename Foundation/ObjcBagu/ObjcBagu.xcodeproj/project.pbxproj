@@ -127,6 +127,20 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		0D51DBAC282F547F00C854B6 /* NSThread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSThread;
+			sourceTree = "<group>";
+		};
+		0D51DBAD282F548500C854B6 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSOperation;
+			sourceTree = "<group>";
+		};
 		0D5E53CE28002D31008C9D17 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +344,8 @@
 		0D84B73B2716D8B9007CB183 /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				0D51DBAD282F548500C854B6 /* NSOperation */,
+				0D51DBAC282F547F00C854B6 /* NSThread */,
 				0D84B7352716D7E5007CB183 /* GCD */,
 			);
 			path = MultiThread;

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "BGPreLoader.h"
 #import "BGProtocol.h"
 #import "BGStaticLib.h"
 

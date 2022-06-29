@@ -6,8 +6,11 @@
 //
 
 #import "ViewController.h"
+#import "DemoViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UIButton *nextButton;
 
 @end
 
@@ -17,11 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.nextButton];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
+}
+
+- (void)testAlert {
     NSDictionary *messageAttr = @{
         NSFontAttributeName:[UIFont systemFontOfSize:14],
         NSForegroundColorAttributeName:[UIColor redColor]
@@ -38,6 +44,22 @@
     }]];
     
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)next:(UIButton *)button {
+    DemoViewController *vc = [[DemoViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (UIButton *)nextButton {
+    if (!_nextButton) {
+        _nextButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 500, 300, 50)];
+        [_nextButton setTitle:@"下一步" forState:UIControlStateNormal];
+        [_nextButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
+        [_nextButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_nextButton addTarget:self action:@selector(next:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _nextButton;
 }
 
 @end
