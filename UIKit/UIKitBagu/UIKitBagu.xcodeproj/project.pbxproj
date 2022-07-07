@@ -15,6 +15,7 @@
 		0D84B75C2716E6CC007CB183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D84B75B2716E6CC007CB183 /* Assets.xcassets */; };
 		0D84B75F2716E6CC007CB183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D84B75D2716E6CC007CB183 /* LaunchScreen.storyboard */; };
 		0D84B7622716E6CC007CB183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7612716E6CC007CB183 /* main.m */; };
+		0DFD664928743403009D86DC /* BGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD664828743403009D86DC /* BGButton.swift */; };
 		3AE04F830F862428FAA4A935 /* Pods_UIKitBagu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B02020D0AAE1553510CB464 /* Pods_UIKitBagu.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		0D84B75E2716E6CC007CB183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D84B7602716E6CC007CB183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D84B7612716E6CC007CB183 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DFD664728743403009D86DC /* UIKitBagu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitBagu-Bridging-Header.h"; sourceTree = "<group>"; };
+		0DFD664828743403009D86DC /* BGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGButton.swift; sourceTree = "<group>"; };
 		3B02020D0AAE1553510CB464 /* Pods_UIKitBagu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61901245D93C21812B3A0545 /* Pods-UIKitBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitBagu.release.xcconfig"; path = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu.release.xcconfig"; sourceTree = "<group>"; };
 		99E71D84FE9169E1A6DD326A /* Pods-UIKitBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitBagu.debug.xcconfig"; path = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,20 +74,18 @@
 		0D84B74E2716E6C4007CB183 /* UIKitBagu */ = {
 			isa = PBXGroup;
 			children = (
-				0DB6B30328124D4B00A0A5F3 /* Renderer */,
 				0D84B74F2716E6C4007CB183 /* AppDelegate.h */,
 				0D84B7502716E6C4007CB183 /* AppDelegate.m */,
+				0D371C31283CC8EF00E842B3 /* DemoViewController.h */,
+				0D371C32283CC8EF00E842B3 /* DemoViewController.m */,
+				0D84B7612716E6CC007CB183 /* main.m */,
+				0DB6B30328124D4B00A0A5F3 /* Renderer */,
+				0DFD664528743093009D86DC /* Resources */,
+				0DFD664628743310009D86DC /* SwiftUIKit */,
 				0D84B7522716E6C4007CB183 /* SceneDelegate.h */,
 				0D84B7532716E6C4007CB183 /* SceneDelegate.m */,
 				0D84B7552716E6C4007CB183 /* ViewController.h */,
 				0D84B7562716E6C4007CB183 /* ViewController.m */,
-				0D84B7582716E6C4007CB183 /* Main.storyboard */,
-				0D84B75B2716E6CC007CB183 /* Assets.xcassets */,
-				0D84B75D2716E6CC007CB183 /* LaunchScreen.storyboard */,
-				0D84B7602716E6CC007CB183 /* Info.plist */,
-				0D84B7612716E6CC007CB183 /* main.m */,
-				0D371C31283CC8EF00E842B3 /* DemoViewController.h */,
-				0D371C32283CC8EF00E842B3 /* DemoViewController.m */,
 			);
 			path = UIKitBagu;
 			sourceTree = "<group>";
@@ -94,6 +95,26 @@
 			children = (
 			);
 			path = Renderer;
+			sourceTree = "<group>";
+		};
+		0DFD664528743093009D86DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D84B75B2716E6CC007CB183 /* Assets.xcassets */,
+				0D84B7602716E6CC007CB183 /* Info.plist */,
+				0D84B75D2716E6CC007CB183 /* LaunchScreen.storyboard */,
+				0D84B7582716E6C4007CB183 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0DFD664628743310009D86DC /* SwiftUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0DFD664828743403009D86DC /* BGButton.swift */,
+				0DFD664728743403009D86DC /* UIKitBagu-Bridging-Header.h */,
+			);
+			path = SwiftUIKit;
 			sourceTree = "<group>";
 		};
 		B93D7C9E0CB77CE734853E5E /* Frameworks */ = {
@@ -146,6 +167,7 @@
 				TargetAttributes = {
 					0D84B74B2716E6C4007CB183 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -214,6 +236,7 @@
 				0D84B7512716E6C4007CB183 /* AppDelegate.m in Sources */,
 				0D84B7622716E6CC007CB183 /* main.m in Sources */,
 				0D371C33283CC8EF00E842B3 /* DemoViewController.m in Sources */,
+				0DFD664928743403009D86DC /* BGButton.swift in Sources */,
 				0D84B7542716E6C4007CB183 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
@@ -369,6 +393,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.ui.bagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIKitBagu/SwiftUIKit/UIKitBagu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -379,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
@@ -390,6 +418,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.ui.bagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIKitBagu/SwiftUIKit/UIKitBagu-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
