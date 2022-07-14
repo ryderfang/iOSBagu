@@ -10,13 +10,14 @@
 		0D371C33283CC8EF00E842B3 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D371C32283CC8EF00E842B3 /* DemoViewController.m */; };
 		0D84B7512716E6C4007CB183 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7502716E6C4007CB183 /* AppDelegate.m */; };
 		0D84B7542716E6C4007CB183 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7532716E6C4007CB183 /* SceneDelegate.m */; };
-		0D84B7572716E6C4007CB183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7562716E6C4007CB183 /* ViewController.m */; };
-		0D84B75A2716E6C4007CB183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D84B7582716E6C4007CB183 /* Main.storyboard */; };
-		0D84B75C2716E6CC007CB183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D84B75B2716E6CC007CB183 /* Assets.xcassets */; };
-		0D84B75F2716E6CC007CB183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D84B75D2716E6CC007CB183 /* LaunchScreen.storyboard */; };
+		0D84B7572716E6C4007CB183 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7562716E6C4007CB183 /* MainViewController.m */; };
 		0D84B7622716E6CC007CB183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D84B7612716E6CC007CB183 /* main.m */; };
-		0DFD664928743403009D86DC /* BGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD664828743403009D86DC /* BGButton.swift */; };
+		0DFD664928743403009D86DC /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD664828743403009D86DC /* SimpleView.swift */; };
 		3AE04F830F862428FAA4A935 /* Pods_UIKitBagu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B02020D0AAE1553510CB464 /* Pods_UIKitBagu.framework */; };
+		DAC64EE7287FE6FB00A42FEE /* SwiftUIViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC64EE6287FE6FB00A42FEE /* SwiftUIViewFactory.swift */; };
+		DAC64EEE288002DE00A42FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC64EEB288002DE00A42FEE /* Assets.xcassets */; };
+		DAC64EF12880051400A42FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC64EEF288004FB00A42FEE /* LaunchScreen.storyboard */; };
+		DAC64EF22880051400A42FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC64EF0288004FB00A42FEE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,18 +28,20 @@
 		0D84B7502716E6C4007CB183 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0D84B7522716E6C4007CB183 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		0D84B7532716E6C4007CB183 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		0D84B7552716E6C4007CB183 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0D84B7562716E6C4007CB183 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0D84B7592716E6C4007CB183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D84B75B2716E6CC007CB183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D84B75E2716E6CC007CB183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0D84B7602716E6CC007CB183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D84B7552716E6C4007CB183 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0D84B7562716E6C4007CB183 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0D84B7612716E6CC007CB183 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0DFD664728743403009D86DC /* UIKitBagu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitBagu-Bridging-Header.h"; sourceTree = "<group>"; };
-		0DFD664828743403009D86DC /* BGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGButton.swift; sourceTree = "<group>"; };
+		0DFD664828743403009D86DC /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 		3B02020D0AAE1553510CB464 /* Pods_UIKitBagu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61901245D93C21812B3A0545 /* Pods-UIKitBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitBagu.release.xcconfig"; path = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu.release.xcconfig"; sourceTree = "<group>"; };
 		99E71D84FE9169E1A6DD326A /* Pods-UIKitBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitBagu.debug.xcconfig"; path = "Target Support Files/Pods-UIKitBagu/Pods-UIKitBagu.debug.xcconfig"; sourceTree = "<group>"; };
+		DAC64EE6287FE6FB00A42FEE /* SwiftUIViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewFactory.swift; sourceTree = "<group>"; };
+		DAC64EE9288002DD00A42FEE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		DAC64EEA288002DD00A42FEE /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = Resources/Base.lproj; sourceTree = "<group>"; };
+		DAC64EEB288002DE00A42FEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		DAC64EEF288004FB00A42FEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAC64EF0288004FB00A42FEE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,15 +79,13 @@
 			children = (
 				0D84B74F2716E6C4007CB183 /* AppDelegate.h */,
 				0D84B7502716E6C4007CB183 /* AppDelegate.m */,
-				0D371C31283CC8EF00E842B3 /* DemoViewController.h */,
-				0D371C32283CC8EF00E842B3 /* DemoViewController.m */,
 				0D84B7612716E6CC007CB183 /* main.m */,
-				0DFD664528743093009D86DC /* Resources */,
 				0DFD664628743310009D86DC /* SwiftUIKit */,
+				DAC64EE5287FE25300A42FEE /* ViewControllers */,
+				DAC64EE8287FE71200A42FEE /* Headers */,
 				0D84B7522716E6C4007CB183 /* SceneDelegate.h */,
 				0D84B7532716E6C4007CB183 /* SceneDelegate.m */,
-				0D84B7552716E6C4007CB183 /* ViewController.h */,
-				0D84B7562716E6C4007CB183 /* ViewController.m */,
+				0DFD664528743093009D86DC /* Resources */,
 			);
 			path = UIKitBagu;
 			sourceTree = "<group>";
@@ -92,19 +93,20 @@
 		0DFD664528743093009D86DC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0D84B75B2716E6CC007CB183 /* Assets.xcassets */,
-				0D84B7602716E6CC007CB183 /* Info.plist */,
-				0D84B75D2716E6CC007CB183 /* LaunchScreen.storyboard */,
-				0D84B7582716E6C4007CB183 /* Main.storyboard */,
+				DAC64EEB288002DE00A42FEE /* Assets.xcassets */,
+				DAC64EEF288004FB00A42FEE /* LaunchScreen.storyboard */,
+				DAC64EF0288004FB00A42FEE /* Main.storyboard */,
+				DAC64EEA288002DD00A42FEE /* Base.lproj */,
+				DAC64EE9288002DD00A42FEE /* Info.plist */,
 			);
-			path = Resources;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		0DFD664628743310009D86DC /* SwiftUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0DFD664828743403009D86DC /* BGButton.swift */,
-				0DFD664728743403009D86DC /* UIKitBagu-Bridging-Header.h */,
+				0DFD664828743403009D86DC /* SimpleView.swift */,
+				DAC64EE6287FE6FB00A42FEE /* SwiftUIViewFactory.swift */,
 			);
 			path = SwiftUIKit;
 			sourceTree = "<group>";
@@ -125,6 +127,25 @@
 			);
 			name = Pods;
 			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		DAC64EE5287FE25300A42FEE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D371C31283CC8EF00E842B3 /* DemoViewController.h */,
+				0D371C32283CC8EF00E842B3 /* DemoViewController.m */,
+				0D84B7552716E6C4007CB183 /* MainViewController.h */,
+				0D84B7562716E6C4007CB183 /* MainViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DAC64EE8287FE71200A42FEE /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0DFD664728743403009D86DC /* UIKitBagu-Bridging-Header.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D84B75F2716E6CC007CB183 /* LaunchScreen.storyboard in Resources */,
-				0D84B75C2716E6CC007CB183 /* Assets.xcassets in Resources */,
-				0D84B75A2716E6C4007CB183 /* Main.storyboard in Resources */,
+				DAC64EF12880051400A42FEE /* LaunchScreen.storyboard in Resources */,
+				DAC64EF22880051400A42FEE /* Main.storyboard in Resources */,
+				DAC64EEE288002DE00A42FEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,35 +245,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D84B7572716E6C4007CB183 /* ViewController.m in Sources */,
+				0D84B7572716E6C4007CB183 /* MainViewController.m in Sources */,
 				0D84B7512716E6C4007CB183 /* AppDelegate.m in Sources */,
 				0D84B7622716E6CC007CB183 /* main.m in Sources */,
 				0D371C33283CC8EF00E842B3 /* DemoViewController.m in Sources */,
-				0DFD664928743403009D86DC /* BGButton.swift in Sources */,
+				0DFD664928743403009D86DC /* SimpleView.swift in Sources */,
+				DAC64EE7287FE6FB00A42FEE /* SwiftUIViewFactory.swift in Sources */,
 				0D84B7542716E6C4007CB183 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0D84B7582716E6C4007CB183 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D84B7592716E6C4007CB183 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0D84B75D2716E6CC007CB183 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D84B75E2716E6CC007CB183 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0D84B7632716E6CC007CB183 /* Debug */ = {
@@ -376,16 +379,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1000;
 				DEVELOPMENT_TEAM = J53UGYRH6D;
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitBagu/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.ryfang.ui.bagu;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryder.bagu.ui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "UIKitBagu/SwiftUIKit/UIKitBagu-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIKitBagu/Headers/UIKitBagu-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,16 +406,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AV8J5QKX6U;
+				CURRENT_PROJECT_VERSION = 1000;
+				DEVELOPMENT_TEAM = J53UGYRH6D;
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitBagu/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.ryfang.ui.bagu;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryder.bagu.ui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "UIKitBagu/SwiftUIKit/UIKitBagu-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIKitBagu/Headers/UIKitBagu-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -7,11 +7,13 @@
 //
 
 #import "DemoViewController.h"
+#import "UIKitBagu-Swift.h"
 
 @interface DemoViewController ()
 
 // weak 的 timer 本身已经打破了 vc --> timer -> vc 的循环引用
 @property (nonatomic, weak) NSTimer *timer;
+@property (nonatomic, strong) UIViewController *childVC;
 
 @end
 
@@ -22,7 +24,16 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor greenColor];
     
-    [self createTimer];
+    //[self createTimer];
+    [self setupViews];
+}
+
+- (void)setupViews {
+    self.childVC = [SwiftUIViewFactory createSimpleView];
+    [self addChildViewController:self.childVC];
+    [self.childVC didMoveToParentViewController:self];
+    [self.view addSubview:self.childVC.view];
+    self.childVC.view.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300);
 }
 
 - (void)dealloc {

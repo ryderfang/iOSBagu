@@ -1,20 +1,20 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  UIKitBagu
 //
 //  Created by Ryder Fang on 2021/10/13.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "DemoViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @property (nonatomic, strong) UIButton *nextButton;
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
