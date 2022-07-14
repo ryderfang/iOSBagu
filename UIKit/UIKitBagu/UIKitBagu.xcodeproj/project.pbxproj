@@ -79,7 +79,6 @@
 				0D371C31283CC8EF00E842B3 /* DemoViewController.h */,
 				0D371C32283CC8EF00E842B3 /* DemoViewController.m */,
 				0D84B7612716E6CC007CB183 /* main.m */,
-				0DB6B30328124D4B00A0A5F3 /* Renderer */,
 				0DFD664528743093009D86DC /* Resources */,
 				0DFD664628743310009D86DC /* SwiftUIKit */,
 				0D84B7522716E6C4007CB183 /* SceneDelegate.h */,
@@ -88,13 +87,6 @@
 				0D84B7562716E6C4007CB183 /* ViewController.m */,
 			);
 			path = UIKitBagu;
-			sourceTree = "<group>";
-		};
-		0DB6B30328124D4B00A0A5F3 /* Renderer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Renderer;
 			sourceTree = "<group>";
 		};
 		0DFD664528743093009D86DC /* Resources */ = {
@@ -384,13 +376,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AV8J5QKX6U;
-				INFOPLIST_FILE = UIKitBagu/Info.plist;
+				DEVELOPMENT_TEAM = J53UGYRH6D;
+				INFOPLIST_FILE = "$(SRCROOT)/UIKitBagu/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.ui.bagu;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.ryfang.ui.bagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "UIKitBagu/SwiftUIKit/UIKitBagu-Bridging-Header.h";
@@ -410,12 +402,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV8J5QKX6U;
-				INFOPLIST_FILE = UIKitBagu/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UIKitBagu/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.fangr.ui.bagu;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.ryfang.ui.bagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "UIKitBagu/SwiftUIKit/UIKitBagu-Bridging-Header.h";
