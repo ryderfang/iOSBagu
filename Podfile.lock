@@ -1,21 +1,45 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - BGStaticLib (0.0.1)
+  - SnapKit (5.6.0)
   - SwiftBagu (0.0.1)
 
 DEPENDENCIES:
+  - AFNetworking (from `Vendor/AFNetworking`)
   - BGStaticLib (from `./StaticLib`)
+  - SnapKit (from `Vendor/SnapKit`)
   - SwiftBagu (from `./Foundation/SwiftBagu`)
 
 EXTERNAL SOURCES:
+  AFNetworking:
+    :path: Vendor/AFNetworking
   BGStaticLib:
     :path: "./StaticLib"
+  SnapKit:
+    :path: Vendor/SnapKit
   SwiftBagu:
     :path: "./Foundation/SwiftBagu"
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   BGStaticLib: d8c2df094584d9c56053a917d5cbf9eb6552daac
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftBagu: 9d9bca507570e0328393cb8b4294bb9baecdfa6d
 
-PODFILE CHECKSUM: 6bea8255273fff43bda362f31e9e68b1a4734528
+PODFILE CHECKSUM: 24eba9ba13f29469d9c20ec3fee468d5458b2c2e
 
 COCOAPODS: 1.11.3

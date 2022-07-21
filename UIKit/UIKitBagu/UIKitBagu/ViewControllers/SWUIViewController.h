@@ -1,5 +1,5 @@
 //
-//  DemoViewController.h
+//  SWUIViewController.h
 //  UIKitBagu
 //
 //  Created by Ryder Fang on 2022/5/24.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DemoViewController : UIViewController
+@interface SWUIViewController : UIViewController
 
 @end
 

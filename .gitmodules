@@ -1,0 +1,6 @@
+[submodule "Vendor/SnapKit"]
+	path = Vendor/SnapKit
+	url = https://github.com/SnapKit/SnapKit.git
+[submodule "Vendor/AFNetworking"]
+	path = Vendor/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git

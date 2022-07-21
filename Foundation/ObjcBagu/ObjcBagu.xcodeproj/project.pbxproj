@@ -34,7 +34,25 @@
 		0DBB4490271EEA6800F9C479 /* OCCategory+T2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB448F271EEA6800F9C479 /* OCCategory+T2.m */; };
 		0DC8C917281814E4007498FE /* OCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC8C916281814E4007498FE /* OCBlock.m */; };
 		7EDDC8C3965A7D84ED81518E /* Pods_ObjcBagu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8B872BF68CDB49C12A8D0E /* Pods_ObjcBagu.framework */; };
+		DA614B85288562330048B426 /* SwiftBagu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA614B84288562330048B426 /* SwiftBagu.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA614B8B288562D20048B426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA614B86288562D20048B426 /* SwiftBagu.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0D0DBB53281AB9A60087D77E;
+			remoteInfo = SwiftBagu;
+		};
+		DA614B8D288562D20048B426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA614B86288562D20048B426 /* SwiftBagu.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0D0DBB5D281AB9A60087D77E;
+			remoteInfo = SwiftBaguTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0D84B7222716D68D007CB183 /* CopyFiles */ = {
@@ -106,6 +124,9 @@
 		316DEA373116E2B9C956A1EA /* Pods-ObjcBagu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcBagu.release.xcconfig"; path = "Target Support Files/Pods-ObjcBagu/Pods-ObjcBagu.release.xcconfig"; sourceTree = "<group>"; };
 		3F8B872BF68CDB49C12A8D0E /* Pods_ObjcBagu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96C45C09A27AD4E155EEFE4 /* Pods-ObjcBagu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcBagu.debug.xcconfig"; path = "Target Support Files/Pods-ObjcBagu/Pods-ObjcBagu.debug.xcconfig"; sourceTree = "<group>"; };
+		DA614B61288559370048B426 /* SwiftBagu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA614B84288562330048B426 /* SwiftBagu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA614B86288562D20048B426 /* SwiftBagu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftBagu.xcodeproj; path = ../SwiftBagu/SwiftBagu.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA614B85288562330048B426 /* SwiftBagu.framework in Frameworks */,
 				7EDDC8C3965A7D84ED81518E /* Pods_ObjcBagu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +201,7 @@
 		0D84B71B2716D68D007CB183 = {
 			isa = PBXGroup;
 			children = (
+				DA614B86288562D20048B426 /* SwiftBagu.xcodeproj */,
 				0D84B7262716D68D007CB183 /* ObjcBagu */,
 				0D84B7252716D68D007CB183 /* Products */,
 				414D71316879C0E5E5B53C7E /* Pods */,
@@ -387,9 +410,20 @@
 		AE09C9D9029F16BCAA883302 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA614B84288562330048B426 /* SwiftBagu.framework */,
+				DA614B61288559370048B426 /* SwiftBagu.framework */,
 				3F8B872BF68CDB49C12A8D0E /* Pods_ObjcBagu.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA614B87288562D20048B426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA614B8C288562D20048B426 /* SwiftBagu.framework */,
+				DA614B8E288562D20048B426 /* SwiftBaguTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,12 +473,35 @@
 			mainGroup = 0D84B71B2716D68D007CB183;
 			productRefGroup = 0D84B7252716D68D007CB183 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA614B87288562D20048B426 /* Products */;
+					ProjectRef = DA614B86288562D20048B426 /* SwiftBagu.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0D84B7232716D68D007CB183 /* ObjcBagu */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DA614B8C288562D20048B426 /* SwiftBagu.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftBagu.framework;
+			remoteRef = DA614B8B288562D20048B426 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA614B8E288562D20048B426 /* SwiftBaguTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftBaguTests.xctest;
+			remoteRef = DA614B8D288562D20048B426 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		1F53D0903201B3EC003010BE /* [CP] Check Pods Manifest.lock */ = {
@@ -634,7 +691,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -663,7 +723,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				OTHER_LDFLAGS = (
 					"$(inherited)",

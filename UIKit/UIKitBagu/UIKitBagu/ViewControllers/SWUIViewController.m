@@ -6,10 +6,10 @@
 //  Copyright © 2022 Ryder. All rights reserved.
 //
 
-#import "DemoViewController.h"
+#import "SWUIViewController.h"
 #import "UIKitBagu-Swift.h"
 
-@interface DemoViewController ()
+@interface SWUIViewController ()
 
 // weak 的 timer 本身已经打破了 vc --> timer -> vc 的循环引用
 @property (nonatomic, weak) NSTimer *timer;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation DemoViewController
+@implementation SWUIViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
