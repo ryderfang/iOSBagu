@@ -16,6 +16,10 @@
 		3AE04F830F862428FAA4A935 /* Pods_UIKitBagu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B02020D0AAE1553510CB464 /* Pods_UIKitBagu.framework */; };
 		DA614B90288564890048B426 /* RYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA614B8F288564890048B426 /* RYTabBarController.swift */; };
 		DA614B92288933270048B426 /* UKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA614B91288933270048B426 /* UKViewController.swift */; };
+		DA614B95288955AA0048B426 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA614B94288955AA0048B426 /* ViewExt.swift */; };
+		DA614B972889593A0048B426 /* ImgExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA614B962889593A0048B426 /* ImgExt.swift */; };
+		DA9653CF2892840B002E73C2 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9653CE2892840B002E73C2 /* ProgressView.swift */; };
+		DA9653D128928C35002E73C2 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9653D028928C35002E73C2 /* UIColor+Hex.swift */; };
 		DAC64EE7287FE6FB00A42FEE /* SwiftUIViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC64EE6287FE6FB00A42FEE /* SwiftUIViewFactory.swift */; };
 		DAC64EEE288002DE00A42FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC64EEB288002DE00A42FEE /* Assets.xcassets */; };
 		DAC64EF12880051400A42FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC64EEF288004FB00A42FEE /* LaunchScreen.storyboard */; };
@@ -42,6 +46,10 @@
 		DA614B8228855C6A0048B426 /* SwiftBagu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftBagu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA614B8F288564890048B426 /* RYTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYTabBarController.swift; sourceTree = "<group>"; };
 		DA614B91288933270048B426 /* UKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKViewController.swift; sourceTree = "<group>"; };
+		DA614B94288955AA0048B426 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		DA614B962889593A0048B426 /* ImgExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgExt.swift; sourceTree = "<group>"; };
+		DA9653CE2892840B002E73C2 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		DA9653D028928C35002E73C2 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		DAC64EE6287FE6FB00A42FEE /* SwiftUIViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewFactory.swift; sourceTree = "<group>"; };
 		DAC64EE9288002DD00A42FEE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		DAC64EEA288002DD00A42FEE /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = Resources/Base.lproj; sourceTree = "<group>"; };
@@ -87,6 +95,8 @@
 				0D84B74F2716E6C4007CB183 /* AppDelegate.h */,
 				0D84B7502716E6C4007CB183 /* AppDelegate.m */,
 				0D84B7612716E6CC007CB183 /* main.m */,
+				DA614B9828895F920048B426 /* Components */,
+				DA614B93288955980048B426 /* Extensions */,
 				0DFD664628743310009D86DC /* SwiftUIKit */,
 				DAC64EE5287FE25300A42FEE /* ViewControllers */,
 				DAC64EE8287FE71200A42FEE /* Headers */,
@@ -136,6 +146,24 @@
 			);
 			name = Pods;
 			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		DA614B93288955980048B426 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA9653D028928C35002E73C2 /* UIColor+Hex.swift */,
+				DA614B94288955AA0048B426 /* ViewExt.swift */,
+				DA614B962889593A0048B426 /* ImgExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA614B9828895F920048B426 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DA9653CE2892840B002E73C2 /* ProgressView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		DAC64EE5287FE25300A42FEE /* ViewControllers */ = {
@@ -260,12 +288,16 @@
 				DAC64EF428800EBA00A42FEE /* PageIndicator.swift in Sources */,
 				0D84B7572716E6C4007CB183 /* MainViewController.m in Sources */,
 				0D84B7512716E6C4007CB183 /* AppDelegate.m in Sources */,
+				DA614B95288955AA0048B426 /* ViewExt.swift in Sources */,
 				DA614B90288564890048B426 /* RYTabBarController.swift in Sources */,
 				0D84B7622716E6CC007CB183 /* main.m in Sources */,
+				DA9653D128928C35002E73C2 /* UIColor+Hex.swift in Sources */,
 				0D371C33283CC8EF00E842B3 /* SWUIViewController.m in Sources */,
 				0DFD664928743403009D86DC /* SimpleView.swift in Sources */,
+				DA614B972889593A0048B426 /* ImgExt.swift in Sources */,
 				DAC64EE7287FE6FB00A42FEE /* SwiftUIViewFactory.swift in Sources */,
 				0D84B7542716E6C4007CB183 /* SceneDelegate.m in Sources */,
+				DA9653CF2892840B002E73C2 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

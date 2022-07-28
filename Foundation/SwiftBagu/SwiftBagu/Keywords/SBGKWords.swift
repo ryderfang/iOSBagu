@@ -78,7 +78,8 @@ internal class SBGKWords {
             sema.signal()
         }
     }
-    
+
+    // ERR: OMG!
     private func _convention() {
         // call c
         let cFunc : @convention(c) (Double, Double) -> Double = {

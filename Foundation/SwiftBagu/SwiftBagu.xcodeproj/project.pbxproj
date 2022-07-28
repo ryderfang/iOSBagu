@@ -45,6 +45,8 @@
 		0D6194FE281EC76D00E2AF01 /* MyOCFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOCFunction.h; sourceTree = "<group>"; };
 		0D6194FF281EC76D00E2AF01 /* MyOCFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOCFunction.m; sourceTree = "<group>"; };
 		0D619504281FF43300E2AF01 /* SBGClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBGClosures.swift; sourceTree = "<group>"; };
+		DA9653CA288F82FF002E73C2 /* StyleGuide.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StyleGuide.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DA9653CD289227EB002E73C2 /* Swift-Standard-Library.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift-Standard-Library.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				0D619503281FF41D00E2AF01 /* Closures */,
 				0D01F423281BB07900794410 /* Keywords */,
 				0D6194FD281EC75400E2AF01 /* ObjC */,
+				DA9653CC28922471002E73C2 /* Playgrounds */,
 				0D6194DF281D7DBE00E2AF01 /* String */,
 				0D6194DE281D7D9800E2AF01 /* Timer */,
 			);
@@ -147,6 +150,15 @@
 				0D619504281FF43300E2AF01 /* SBGClosures.swift */,
 			);
 			path = Closures;
+			sourceTree = "<group>";
+		};
+		DA9653CC28922471002E73C2 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				DA9653CD289227EB002E73C2 /* Swift-Standard-Library.playground */,
+				DA9653CA288F82FF002E73C2 /* StyleGuide.playground */,
+			);
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

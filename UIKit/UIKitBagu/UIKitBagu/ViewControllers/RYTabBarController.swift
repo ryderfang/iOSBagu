@@ -24,7 +24,7 @@ class RYTabBarController: UITabBarController {
         let swuiVC: UIViewController = SWUIViewController()
         swuiVC.tabBarItem = UITabBarItem(tabBarSystemItem: .mostRecent, tag: 1)
         let ukVC : UIViewController = UKViewController()
-        ukVC.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 2)
+        ukVC.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 2)
         let tabs = [mainVC, swuiVC, ukVC]
         self.setViewControllers(tabs, animated: false)
     }
